@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
+import Close from './Close';
 
 const Lightbox = ({ imgSrc, altText, className, description }: any) => {
 	const [open, setOpen] = useState(false);
@@ -50,11 +51,13 @@ const Lightbox = ({ imgSrc, altText, className, description }: any) => {
 		document.body.style.overflow = 'hidden';
 	};
 
+	const handleClose = () => {
+		setOpen(false);
+		document.body.style.overflow = 'visible';
+	};
+
 	const handleClick = (e: any) => {
-		if (!ref.current?.contains(e.target)) {
-			setOpen(false);
-			document.body.style.overflow = 'visible';
-		}
+		if (!ref.current?.contains(e.target)) return handleClose();
 	};
 
 	useEffect(() => {
@@ -79,6 +82,7 @@ const Lightbox = ({ imgSrc, altText, className, description }: any) => {
 				style={lightBoxProp}
 				className={`lightbox`}
 				onClick={handleClick}>
+				<Close onClick={handleClose} />
 				<Image
 					src={imgSrc}
 					alt={altText}
