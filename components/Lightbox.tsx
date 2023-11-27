@@ -78,15 +78,17 @@ const Lightbox = ({ imgSrc, altText, className, description }: any) => {
 				className={`backdrop ${open ? 'block' : 'hidden'}`}
 				style={backdropProps}
 			/>
+
+			{open && <Close onClick={handleClose} />}
+
 			<animated.div
 				style={lightBoxProp}
 				className={`lightbox`}
 				onClick={handleClick}>
-				<Close onClick={handleClose} />
 				<Image
 					src={imgSrc}
 					alt={altText}
-					className={`rounded cursor-pointer z-50 lightboxImg`}
+					className={`rounded cursor-pointer z-40 lightboxImg`}
 					ref={ref}
 				/>
 			</animated.div>

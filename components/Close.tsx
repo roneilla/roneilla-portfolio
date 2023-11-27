@@ -2,13 +2,12 @@ import React from 'react';
 
 const Close = ({ onClick }: any) => {
 	return (
-		<div onClick={onClick}>
+		<div onClick={onClick} className="cursor-pointer fixed right-4 top-4 z-50">
 			<svg
 				width="26"
 				height="26"
 				viewBox="0 0 26 26"
 				fill="none"
-				className="cursor-pointer fixed right-4 top-4"
 				xmlns="http://www.w3.org/2000/svg">
 				<path
 					fill-rule="evenodd"

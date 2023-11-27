@@ -217,7 +217,7 @@ body {
 }
 
 .backdrop {
-	@apply fixed top-0 left-0 w-screen h-screen z-40 bg-black;
+	@apply fixed top-0 left-0 w-screen h-screen z-30 bg-black;
 }
 
 .lightbox {
@@ -226,8 +226,7 @@ body {
 
 .lightbox img {
 	@apply w-auto h-auto object-contain;
-	max-height: calc(100vh - 4rem);
-	max-height: 100%;
+	max-height: calc(100vh - 7rem);
 }
 
 .navLogo {
