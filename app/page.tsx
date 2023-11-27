@@ -2,10 +2,11 @@ import WorkCard from '@/components/WorkCard';
 import React from 'react';
 
 import projectData from './data';
+import PageTransition from '@/components/PageTransition';
 
 const Home = () => {
 	return (
-		<>
+		<PageTransition>
 			<div className="section">
 				<div className="mt-8 sm:w-1/2 md:w-2/3">
 					<h1 className="h1 displayFont">
@@ -34,7 +35,7 @@ const Home = () => {
 					/>
 				))}
 			</div>
-		</>
+		</PageTransition>
 	);
 };
 
