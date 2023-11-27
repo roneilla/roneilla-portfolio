@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Loader from '@/components/Loader';
 import Footer from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
 	title: 'Roneilla Bumanlag - Interaction Designer',
@@ -24,6 +25,7 @@ export default function RootLayout({
 
 				<div className="page">{children}</div>
 				<Footer />
+				<Analytics />
 			</body>
 		</html>
 	);
