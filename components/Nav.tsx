@@ -5,8 +5,6 @@ import Button from './Button';
 import ThemeSwitcher from './ThemeSwitcher';
 import { usePathname, useRouter } from 'next/navigation';
 import { useSpring, animated } from 'react-spring';
-import Image from 'next/image';
-import useTheme from '@/utils/useTheme';
 import Logo from './Logo';
 
 const Nav = () => {
@@ -14,8 +12,6 @@ const Nav = () => {
 	const router = useRouter();
 
 	const [loading, setLoading] = useState(false);
-
-	const { theme } = useTheme();
 
 	const handleClick = ({ e, link }: any) => {
 		e.preventDefault();
@@ -78,13 +74,6 @@ const Nav = () => {
 						<div className="navLogo">
 							<Logo />
 						</div>
-
-						{/* <Image
-							style={{ fill: 'white' }}
-							src={Logo}
-							className="navLogo"
-							alt="A logo depicting an ampersand "
-						/> */}
 					</div>
 				)}
 

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import Close from './Close';
+import ElTransition from './ElTransition';
 
 const Lightbox = ({ imgSrc, altText, className, description }: any) => {
 	const [open, setOpen] = useState(false);
@@ -92,12 +93,15 @@ const Lightbox = ({ imgSrc, altText, className, description }: any) => {
 					ref={ref}
 				/>
 			</animated.div>
-			<Image
-				src={imgSrc}
-				alt={altText}
-				className={`rounded cursor-pointer ${className}`}
-				onClick={handleOpen}
-			/>
+
+			<ElTransition>
+				<Image
+					src={imgSrc}
+					alt={altText}
+					className={`rounded cursor-pointer ${className}`}
+					onClick={handleOpen}
+				/>
+			</ElTransition>
 			{/* <p className="text-white text-center mt-4">{description}</p> */}
 		</>
 	);
