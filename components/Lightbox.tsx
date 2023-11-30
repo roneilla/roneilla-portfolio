@@ -6,7 +6,14 @@ import { useSpring, animated } from 'react-spring';
 import Close from './Close';
 import ElTransition from './ElTransition';
 
-const Lightbox = ({ imgSrc, altText, className, description }: any) => {
+const Lightbox = ({
+	imgSrc,
+	altText,
+	className,
+	description,
+	background,
+	header,
+}: any) => {
 	const [open, setOpen] = useState(false);
 	const ref = useRef<any>(null);
 
@@ -73,6 +80,20 @@ const Lightbox = ({ imgSrc, altText, className, description }: any) => {
 		return () => document.removeEventListener('keydown', handleKey);
 	}, []);
 
+	const DisplayImage = () => {
+		return (
+			<ElTransition>
+				<Image
+					priority={header}
+					src={imgSrc}
+					alt={altText}
+					className={`rounded cursor-pointer ${className}`}
+					onClick={handleOpen}
+				/>
+			</ElTransition>
+		);
+	};
+
 	return (
 		<>
 			<animated.div
@@ -94,14 +115,16 @@ const Lightbox = ({ imgSrc, altText, className, description }: any) => {
 				/>
 			</animated.div>
 
-			<ElTransition>
-				<Image
-					src={imgSrc}
-					alt={altText}
-					className={`rounded cursor-pointer ${className}`}
-					onClick={handleOpen}
-				/>
-			</ElTransition>
+			{background ? (
+				<div
+					className={`cursor-pointer flex-1 imgContainer ${background}`}
+					onClick={handleOpen}>
+					<DisplayImage />
+				</div>
+			) : (
+				<DisplayImage />
+			)}
+
 			{/* <p className="text-white text-center mt-4">{description}</p> */}
 		</>
 	);

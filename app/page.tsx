@@ -8,7 +8,7 @@ const Home = () => {
 	return (
 		<PageTransition>
 			<div className="section">
-				<div className="mt-8 sm:w-1/2 md:w-2/3">
+				<div className="mt-8 sm:w-2/3">
 					<h1 className="h1 displayFont">
 						Roneilla <br />
 						Bumanlag
@@ -17,6 +17,7 @@ const Home = () => {
 
 				<div className="mt-8 sm:w-1/2 md:w-1/3 ml-auto">
 					<p className="text-xl">
+						{/* TODO: change this */}
 						Interaction designer and creative developer.{` `}
 						<span className="text-gray-500 dark:text-gray-300">
 							Currently a UX Developer at Wagepoint
@@ -24,9 +25,10 @@ const Home = () => {
 					</p>
 				</div>
 			</div>
-			<div className="px-4 md:px-8 mt-12 sm:mt-20 flex flex-wrap mb-8">
+			<div className="px-4 md:px-8 mt-12 flex flex-wrap mb-8">
 				{projectData.map((item: any) => (
 					<WorkCard
+						id={item.id}
 						key={item.id}
 						title={item.title}
 						link={item.link}

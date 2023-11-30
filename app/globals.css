@@ -71,8 +71,8 @@ body {
 }
 
 ::selection {
-	background-color: #dcddfb;
-	color: black;
+	background-color: #f2f3fd;
+	color: #7879bd;
 }
 
 * {
@@ -111,6 +111,9 @@ body {
 .buttonWithArrow:hover {
 	padding-left: 30px;
 	padding-right: 8px;
+
+	/* border-color: #7879bd;
+	color: #7879bd; */
 }
 
 .buttonWithArrow:hover:after {
@@ -124,11 +127,11 @@ body {
 
 @layer components {
 	.h1 {
-		@apply text-5xl sm:text-7xl;
+		@apply text-6xl sm:text-7xl;
 	}
 
 	.h2 {
-		@apply font-medium text-3xl sm:text-5xl;
+		@apply font-medium text-4xl sm:text-5xl;
 	}
 
 	.navlink {
@@ -244,6 +247,10 @@ body {
 	z-index: 1;
 }
 
+.r-p0 {
+	background-color: #7879bd;
+}
+
 .r-p1 {
 	background-color: #adaedd;
 }
@@ -256,4 +263,11 @@ body {
 
 .purple-border {
 	border-bottom: 1px solid #dcddfb;
+}
+.footerBtn {
+	transition: color 0.5 ease-in;
+}
+
+.footerBtn:hover {
+	color: #7879bd;
 }

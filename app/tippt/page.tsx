@@ -20,7 +20,7 @@ const Tippt = () => {
 					role={`UX Designer`}
 				/>
 				<div className="rounded mt-8">
-					<Lightbox imgSrc={Header} />
+					<Lightbox header imgSrc={Header} />
 				</div>
 				<div className="mt-12">
 					<Lightbox imgSrc={Screens} />
@@ -37,7 +37,7 @@ const Tippt = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 ">
+					<div className="mt-4">
 						<Lightbox imgSrc={Designsystem} />
 					</div>
 				</div>

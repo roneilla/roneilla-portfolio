@@ -22,12 +22,17 @@ const Mush = () => {
 					<Video src={'https://www.youtube.com/watch?v=GjFVKu3kSM4'} />
 				</div>
 				<div className="flex gap-4 mt-12 flex-col sm:flex-row">
-					<div className="flex-1 imgContainer freshii-green">
-						<Lightbox imgSrc={FreshiiFilter} className="phoneImg" />
-					</div>
-					<div className="flex-1 imgContainer freshii-green">
-						<Lightbox imgSrc={FreshiiIg} className="phoneImg" />
-					</div>
+					<Lightbox
+						background="freshii-green"
+						imgSrc={FreshiiFilter}
+						className="phoneImg"
+					/>
+
+					<Lightbox
+						background="freshii-green"
+						imgSrc={FreshiiIg}
+						className="phoneImg"
+					/>
 				</div>
 			</div>
 			<ProjectFooter />

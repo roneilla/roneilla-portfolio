@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { useRouter } from 'next/navigation';
 
-const PageOutTransition = ({ link, children }: any) => {
+const PageOutTransition = ({ link, children, className }: any) => {
 	const router = useRouter();
 
 	const [loading, setLoading] = useState(false);
@@ -51,7 +51,7 @@ const PageOutTransition = ({ link, children }: any) => {
 
 	return (
 		<>
-			<div onClick={handleClick} className="cursor-pointer">
+			<div onClick={handleClick} className={`cursor-pointer ${className}`}>
 				{children}
 			</div>
 			<animated.div

@@ -50,14 +50,10 @@ const Tpol = () => {
 
 				<div className="mt-12">
 					<h2 className="h2 displayFont">Companion app</h2>
-
 					<div className="flex gap-4 mt-4 flex-col sm:flex-row">
-						<div className="flex-1 imgContainer tpol-yellow">
-							<Lightbox imgSrc={PlayerDash} />
-						</div>
-						<div className="flex-1 imgContainer tpol-blue">
-							<Lightbox imgSrc={GamemasterDash} />
-						</div>
+						<Lightbox background="tpol-yellow" imgSrc={PlayerDash} />
+
+						<Lightbox background="tpol-blue" imgSrc={GamemasterDash} />
 					</div>
 				</div>
 			</div>

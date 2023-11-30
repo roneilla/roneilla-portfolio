@@ -45,12 +45,17 @@ const SdAr = () => {
 					</div>
 
 					<div className="flex gap-4 mt-4 flex-col sm:flex-row imgHeight">
-						<div className="flex-1 imgContainer sd-pink">
-							<Lightbox imgSrc={Intro} className="phoneImg" />
-						</div>
-						<div className="flex-1 imgContainer sd-blue">
-							<Lightbox imgSrc={Training} className="phoneImg" />
-						</div>
+						<Lightbox
+							background="sd-pink"
+							imgSrc={Intro}
+							className="phoneImg"
+						/>
+
+						<Lightbox
+							background="sd-blue"
+							imgSrc={Training}
+							className="phoneImg"
+						/>
 					</div>
 				</div>
 				<div className="mt-12">
@@ -65,12 +70,17 @@ const SdAr = () => {
 					</div>
 
 					<div className="flex gap-4 mt-4 flex-col sm:flex-row">
-						<div className="flex-1 imgContainer sd-blue">
-							<Lightbox imgSrc={Pineapple} className="phoneImg" />
-						</div>
-						<div className="flex-1 imgContainer sd-pink">
-							<Lightbox imgSrc={Peacock} className="phoneImg" />
-						</div>
+						<Lightbox
+							background="sd-blue"
+							imgSrc={Pineapple}
+							className="phoneImg"
+						/>
+
+						<Lightbox
+							background="sd-pink"
+							imgSrc={Peacock}
+							className="phoneImg"
+						/>
 					</div>
 				</div>
 				<div className="mt-12">
@@ -86,15 +96,23 @@ const SdAr = () => {
 					</div>
 
 					<div className="flex gap-4 mt-4 flex-col sm:flex-row">
-						<div className="flex-1 imgContainer sd-pink">
-							<Lightbox imgSrc={Dance} className="phoneImg" />
-						</div>
-						<div className="flex-1 imgContainer sd-blue">
-							<Lightbox imgSrc={Stars} className="phoneImg" />
-						</div>
-						<div className="flex-1 imgContainer sd-purple">
-							<Lightbox imgSrc={Frame} className="phoneImg" />
-						</div>
+						<Lightbox
+							background="sd-pink"
+							imgSrc={Dance}
+							className="phoneImg"
+						/>
+
+						<Lightbox
+							background="sd-blue"
+							imgSrc={Stars}
+							className="phoneImg"
+						/>
+
+						<Lightbox
+							background="sd-purple"
+							imgSrc={Frame}
+							className="phoneImg"
+						/>
 					</div>
 				</div>
 			</div>

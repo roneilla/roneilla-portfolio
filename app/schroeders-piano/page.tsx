@@ -21,7 +21,7 @@ const Peanuts = () => {
 				/>
 
 				<div className="rounded mt-8">
-					<Lightbox imgSrc={Header} />
+					<Lightbox imgSrc={Header} header={true} />
 				</div>
 
 				<div className="mt-12">
