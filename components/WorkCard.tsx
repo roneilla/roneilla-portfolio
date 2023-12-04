@@ -2,10 +2,10 @@
 
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, useInView, easings } from 'react-spring';
 import PageOutTransition from './PageOutTransition';
 
-const WorkCard = ({ id, title, description, imgSrc, link }: any) => {
+const WorkCard = ({ id, title, description, imgSrc, link, ind }: any) => {
 	const [active, setActive] = useState(false);
 
 	const { x } = useSpring({
@@ -19,6 +19,21 @@ const WorkCard = ({ id, title, description, imgSrc, link }: any) => {
 	const scallopedSq =
 		'M53.1721 105.314C24.1081 105.314 0.547119 128.875 0.547119 157.939C0.547119 187.003 24.1081 210.564 53.1721 210.564C24.1081 210.564 0.547119 234.125 0.547119 263.189C0.547119 292.253 24.1081 315.814 53.1721 315.814C24.1081 315.814 0.547119 339.375 0.547119 368.439C0.547119 397.503 24.1081 421.064 53.1721 421.064C81.8241 421.064 105.128 398.166 105.783 369.672C106.438 398.166 129.77 421.064 158.422 421.064C187.074 421.064 210.378 398.166 211.033 369.672C211.688 398.166 235.02 421.064 263.672 421.064C292.324 421.064 315.628 398.166 316.283 369.672C316.938 398.166 340.27 421.064 368.922 421.064C397.986 421.064 421.547 397.503 421.547 368.439C421.547 339.677 398.474 316.305 369.827 315.822C398.474 315.339 421.547 291.951 421.547 263.189C421.547 234.427 398.474 211.055 369.827 210.572C398.474 210.089 421.547 186.701 421.547 157.939C421.547 129.177 398.474 105.789 369.827 105.306C398.474 104.823 421.547 81.4506 421.547 52.6891C421.547 23.6249 397.986 0.0639648 368.922 0.0639648C339.858 0.0639648 316.297 23.6249 316.297 52.6891C316.297 23.6249 292.736 0.0639648 263.672 0.0639648C234.608 0.0639648 211.047 23.6249 211.047 52.6891C211.047 23.6249 187.486 0.0639648 158.422 0.0639648C129.358 0.0639648 105.797 23.6249 105.797 52.6891C105.797 23.6249 82.2361 0.0639648 53.1721 0.0639648C24.1081 0.0639648 0.547119 23.6249 0.547119 52.6891C0.547119 81.753 24.1081 105.314 53.1721 105.314Z';
 
+	const [ref, springs] = useInView(() => ({
+		from: {
+			opacity: 0,
+			transform: 'translate(0px, 16px)',
+		},
+		to: {
+			opacity: 1,
+			transform: 'translate(0px, 0px)',
+		},
+		config: {
+			easing: easings.easeInOutQuint,
+			duration: 500,
+		},
+	}));
+
 	return (
 		<>
 			<div
@@ -27,33 +42,35 @@ const WorkCard = ({ id, title, description, imgSrc, link }: any) => {
 				onMouseEnter={() => setActive(true)}
 				onMouseLeave={() => setActive(false)}>
 				<PageOutTransition link={link}>
-					<svg
-						width="0"
-						height="0"
-						viewBox="0 0 422 422"
-						fill="none"
-						preserveAspectRatio="true"
-						xmlns="http://www.w3.org/2000/svg">
-						<clipPath id={`clip-${id}`} clipPathUnits="objectBoundingBox">
-							<animated.path
-								transform="scale(0.00236966824, 0.00236966824)"
-								fillRule="evenodd"
-								clipRule="evenodd"
-								d={x.to({
-									range: [0, 1],
-									output: [roundedSq, scallopedSq],
-								})}
-							/>
-						</clipPath>
-					</svg>
-					<Image
-						style={{ clipPath: `url(#clip-${id})` }}
-						src={imgSrc}
-						alt=""
-						className="bg-gray-200 rounded h-72 workCardImg"
-					/>
-					<p className="text-xl mt-4 mb-1">{title}</p>
-					<p className="text-gray-500 dark:text-gray-300">{description}</p>
+					<animated.div ref={ref} style={springs}>
+						<svg
+							width="0"
+							height="0"
+							viewBox="0 0 422 422"
+							fill="none"
+							preserveAspectRatio="true"
+							xmlns="http://www.w3.org/2000/svg">
+							<clipPath id={`clip-${id}`} clipPathUnits="objectBoundingBox">
+								<animated.path
+									transform="scale(0.00236966824, 0.00236966824)"
+									fillRule="evenodd"
+									clipRule="evenodd"
+									d={x.to({
+										range: [0, 1],
+										output: [roundedSq, scallopedSq],
+									})}
+								/>
+							</clipPath>
+						</svg>
+						<Image
+							style={{ clipPath: `url(#clip-${id})` }}
+							src={imgSrc}
+							alt=""
+							className="bg-gray-200 rounded h-72 workCardImg"
+						/>
+						<p className="text-xl mt-4 mb-1">{title}</p>
+						<p className="text-gray-500 dark:text-gray-300">{description}</p>
+					</animated.div>
 				</PageOutTransition>
 			</div>
 		</>

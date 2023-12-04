@@ -9,6 +9,8 @@ import CloseUp from '@/app/assets/peanuts/close.png';
 
 import ProjectHeader from '@/components/ProjectHeader';
 import ProjectFooter from '@/components/ProjectFooter';
+import ElTransition from '@/components/ElTransition';
+import CreditSection from '@/components/CreditSection';
 
 const Peanuts = () => {
 	return (
@@ -36,6 +38,28 @@ const Peanuts = () => {
 						<Lightbox imgSrc={CloseUp} />
 					</div>
 				</div>
+
+				<CreditSection
+					firstCol={{
+						title: 'Team',
+						body: (
+							<>
+								Design lead: Nick Alexander
+								<br /> Interaction designer & developer: Roneilla Bumanlag
+								<br /> 3D artist and animator: Aaron Ong
+								<br /> Product manager: Edward Chow
+							</>
+						),
+					}}
+					secondCol={{
+						title: 'Client',
+						body: 'Kilburn Live',
+					}}
+					thirdCol={{
+						title: 'Year',
+						body: '2022',
+					}}
+				/>
 			</div>
 			<ProjectFooter />
 		</PageTransition>

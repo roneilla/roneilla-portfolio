@@ -3,21 +3,29 @@
 import React from 'react';
 import { useInView, animated } from 'react-spring';
 
-const ElTransition = ({ children, delay }: any) => {
-	const [ref, springs] = useInView(() => ({
-		from: {
-			opacity: 0,
-			transform: 'translate(0px, 16px)',
-		},
-		to: {
-			opacity: 1,
-			transform: 'translate(0px, 0px)',
-		},
-		delay: 300,
-		config: {
-			duration: 500,
-		},
-	}));
+interface ElTranProps {
+	children: any;
+	delay?: number;
+}
+
+const ElTransition = ({ children, delay = 500 }: ElTranProps) => {
+	const [ref, springs] = useInView(
+		() => ({
+			from: {
+				opacity: 0,
+				transform: 'translate(0px, 16px)',
+			},
+			to: {
+				opacity: 1,
+				transform: 'translate(0px, 0px)',
+			},
+			delay: delay,
+			config: {
+				duration: 500,
+			},
+		}),
+		{ once: true }
+	);
 
 	return (
 		<animated.div ref={ref} style={springs} className="h-full">

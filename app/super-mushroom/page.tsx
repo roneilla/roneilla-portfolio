@@ -7,13 +7,14 @@ import FreshiiFilter from '@/app/assets/mushroom/freshii-filter.png';
 import FreshiiIg from '@/app/assets/mushroom/freshii-ig.jpg';
 import ProjectHeader from '@/components/ProjectHeader';
 import ProjectFooter from '@/components/ProjectFooter';
+import CreditSection from '@/components/CreditSection';
 
 const Mush = () => {
 	return (
 		<PageTransition>
 			<div className="section">
 				<ProjectHeader
-					title={`Freshii Super Mushroom filter`}
+					title={`Super Mushroom filter`}
 					description={`An Instagram filter of a mushroom haircut to promote Freshii’s Super
 						Mushroom gummies`}
 					role={`Interaction Designer & Developer`}
@@ -34,6 +35,26 @@ const Mush = () => {
 						className="phoneImg"
 					/>
 				</div>
+				<CreditSection
+					firstCol={{
+						title: 'Team',
+						body: (
+							<>
+								Design lead: Nick Alexander
+								<br /> Interactive developer: Roneilla Bumanlag
+								<br /> 3D artist and rigger: Aaron Ong
+							</>
+						),
+					}}
+					secondCol={{
+						title: 'Client',
+						body: 'Freshii',
+					}}
+					thirdCol={{
+						title: 'Year',
+						body: '2021',
+					}}
+				/>
 			</div>
 			<ProjectFooter />
 		</PageTransition>

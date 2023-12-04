@@ -21,7 +21,7 @@ const ProjectFooter = () => {
 
 	return (
 		<>
-			<div className="flex justify-between px-8 py-16 mt-4">
+			<div className="flex justify-between px-8 md:px-12 py-16 mt-4">
 				<PageOutTransition link={projectData[prev].link} className="footerBtn">
 					<h2 className="h2 displayFont">Previous</h2>
 					<p className="text-gray-500 dark:text-gray-300">

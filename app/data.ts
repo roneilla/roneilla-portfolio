@@ -49,7 +49,7 @@ const projectData = [
 	// 	title: '',
 	// 	link: '/',
 	// 	description: '',
-	// 	image: Tippt,
+	// 	image: <></>,
 	// },
 ];
 

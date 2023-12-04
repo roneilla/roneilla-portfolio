@@ -13,6 +13,8 @@ import GamemasterDash from '@/app/assets/tpol/gamemaster-dashboard.png';
 import PageTransition from '@/components/PageTransition';
 import ProjectHeader from '@/components/ProjectHeader';
 import ProjectFooter from '@/components/ProjectFooter';
+import ElTransition from '@/components/ElTransition';
+import CreditSection from '@/components/CreditSection';
 
 const Tpol = () => {
 	return (
@@ -29,12 +31,13 @@ const Tpol = () => {
 				</div>
 
 				<div className="mt-12">
-					<h2 className="h2 displayFont mb-4">Board game</h2>
+					<ElTransition>
+						<h2 className="h2 displayFont mb-4">Board game</h2>
+					</ElTransition>
 					<Lightbox
 						imgSrc={BgWide}
 						altText="A board game laid out with a deck of cards and a guidebook. There are 4 pieces of cones (player pieces) on the board."
 					/>
-
 					<div className="flex gap-4 mt-4 flex-col sm:flex-row">
 						<div className="flex-1">
 							<Lightbox imgSrc={BgClose} className="h-full object-cover" />
@@ -49,13 +52,26 @@ const Tpol = () => {
 				</div>
 
 				<div className="mt-12">
-					<h2 className="h2 displayFont">Companion app</h2>
+					<ElTransition>
+						<h2 className="h2 displayFont">Companion app</h2>
+					</ElTransition>
 					<div className="flex gap-4 mt-4 flex-col sm:flex-row">
 						<Lightbox background="tpol-yellow" imgSrc={PlayerDash} />
 
 						<Lightbox background="tpol-blue" imgSrc={GamemasterDash} />
 					</div>
 				</div>
+
+				<CreditSection
+					firstCol={{
+						title: 'About',
+						body: `This is an (individual) capstone project`,
+					}}
+					secondCol={{
+						title: 'Year',
+						body: '2021',
+					}}
+				/>
 			</div>
 			<ProjectFooter />
 		</PageTransition>
