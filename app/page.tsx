@@ -13,9 +13,9 @@ import HeaderName from '@/components/HeaderName';
 const Home = () => {
 	const [cardProps, api] = useSpring(
 		() => ({
-			from: { opacity: 0, transform: 'translate(0px, 16px)' },
-			to: { opacity: 1, transform: 'translate(0px, 0px)' },
-			delay: 1250,
+			from: { opacity: 0, bottom: '-16px' },
+			to: { opacity: 1, bottom: '0' },
+			delay: 750,
 			config: {
 				duration: 500,
 				easing: easings.easeInOutQuint,
@@ -38,11 +38,6 @@ const Home = () => {
 						</span>
 					</h1>
 				</div>
-				{/* <div className="mt-8 sm:w-2/3">
-					<h1 className="h1 displayFont splitAnim">
-						<TextSplitAnim initDelay={0.5} text={`Roneilla\nBumanlag`} />
-					</h1>
-				</div> */}
 
 				<div className="mt-4 sm:mt-8 sm:w-1/2">
 					<p className="text-xl splitAnim">
@@ -56,19 +51,21 @@ const Home = () => {
 					</p>
 				</div>
 			</div>
-			<div className="px-4 md:px-8 mt-4 flex flex-wrap mb-8">
-				{projectData.map((item: any, index: number) => (
-					<WorkCard
-						ind={index}
-						id={item.id}
-						key={item.id}
-						title={item.title}
-						link={item.link}
-						imgSrc={item.image}
-						description={item.description}
-					/>
-				))}
-			</div>
+			<animated.div style={cardProps} className="relative">
+				<div className="px-4 md:px-8 mt-4 flex flex-wrap mb-8">
+					{projectData.map((item: any, index: number) => (
+						<WorkCard
+							ind={index}
+							id={item.id}
+							key={item.id}
+							title={item.title}
+							link={item.link}
+							imgSrc={item.image}
+							description={item.description}
+						/>
+					))}
+				</div>
+			</animated.div>
 		</PageTransition>
 	);
 };
