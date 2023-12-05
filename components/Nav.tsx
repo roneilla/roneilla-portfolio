@@ -62,24 +62,26 @@ const Nav = () => {
 	return (
 		<>
 			<animated.div
-				className={`bg-white dark:bg-black flex gap-4 px-8 md:px-12 py-2 items-center z-20 `}>
-				{pathname != '/' ? (
-					<Button
-						withArrow={true}
-						handleClick={(e: any) => handleClick({ e, link: '/' })}>
-						Back to home
-					</Button>
-				) : (
-					<div onClick={(e) => handleClick({ e, link: '/' })}>
-						<div className="navLogo">
-							<Logo />
+				className={`bg-white dark:bg-black flex gap-4 items-center z-20 `}>
+				<div className="container px-8 md:px-12 py-2">
+					{pathname != '/' ? (
+						<Button
+							withArrow={true}
+							handleClick={(e: any) => handleClick({ e, link: '/' })}>
+							Back to home
+						</Button>
+					) : (
+						<div onClick={(e) => handleClick({ e, link: '/' })}>
+							<div className="navLogo">
+								<Logo />
+							</div>
 						</div>
-					</div>
-				)}
+					)}
 
-				<div className="flex-1 flex items-center justify-end gap-4">
-					<ThemeSwitcher />
-					{/* <Button>Contact me</Button> */}
+					<div className="flex-1 flex items-center justify-end gap-4">
+						<ThemeSwitcher />
+						{/* <Button>Contact me</Button> */}
+					</div>
 				</div>
 			</animated.div>
 

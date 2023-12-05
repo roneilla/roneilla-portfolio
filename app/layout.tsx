@@ -23,7 +23,9 @@ export default function RootLayout({
 
 				<Nav />
 
-				<div className="page">{children}</div>
+				<div className="page">
+					<div className="container">{children}</div>
+				</div>
 				<Footer />
 				<Analytics />
 			</body>

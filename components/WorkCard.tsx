@@ -9,7 +9,12 @@ const WorkCard = ({ id, title, description, imgSrc, link, ind }: any) => {
 	const [active, setActive] = useState(false);
 
 	const { x } = useSpring({
-		config: { tension: 170, friction: 26, duration: 300 },
+		config: {
+			tension: 170,
+			friction: 26,
+			duration: 300,
+			easing: easings.easeInOutQuart,
+		},
 		x: active ? 1 : 0,
 	});
 
@@ -38,7 +43,7 @@ const WorkCard = ({ id, title, description, imgSrc, link, ind }: any) => {
 		<>
 			<div
 				id={`tb-${id}`}
-				className="w-100 sm:w-1/2 md:w-1/3 p-4 cursor-pointer relative"
+				className="w-100 sm:w-1/2 p-4 cursor-pointer relative"
 				onMouseEnter={() => setActive(true)}
 				onMouseLeave={() => setActive(false)}>
 				<PageOutTransition link={link}>

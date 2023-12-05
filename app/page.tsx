@@ -8,6 +8,8 @@ import TextSplitAnim from '@/components/TextSplitAnim';
 import LineSplitAnim from '@/components/LineSplitAnim';
 import { useSpring, animated, easings } from 'react-spring';
 
+import HeaderName from '@/components/HeaderName';
+
 const Home = () => {
 	const [cardProps, api] = useSpring(
 		() => ({
@@ -26,25 +28,30 @@ const Home = () => {
 	return (
 		<PageTransition>
 			<div className="section">
-				<div className="mt-8 sm:w-2/3">
+				<div className="mt-16">
+					<h1>
+						<HeaderName />
+					</h1>
+				</div>
+				{/* <div className="mt-8 sm:w-2/3">
 					<h1 className="h1 displayFont splitAnim">
 						<TextSplitAnim initDelay={0.5} text={`Roneilla\nBumanlag`} />
 					</h1>
-				</div>
+				</div> */}
 
-				<div className="mt-8 sm:w-1/2 md:w-1/3 ml-auto">
+				<div className="mt-8 sm:w-1/2">
 					<p className="text-xl splitAnim">
 						<LineSplitAnim
 							initDelay={1.25}
 							text={[
-								'Interaction designer and creative developer. Currently a UX Developer at Wagepoint',
+								`UX Developer passionate about design systems, building for scalability, and making interactions delightful.`,
 							]}
 							// change text to two lines
 						/>
 					</p>
 				</div>
 			</div>
-			<div className="px-4 md:px-8 mt-12 flex flex-wrap mb-8">
+			<div className="px-4 md:px-8 mt-4 flex flex-wrap mb-8">
 				{projectData.map((item: any, index: number) => (
 					<WorkCard
 						ind={index}

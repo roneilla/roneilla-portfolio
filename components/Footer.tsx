@@ -45,33 +45,37 @@ const Footer = () => {
 	});
 
 	return (
-		<footer className="footer text-black flex gap-4">
-			<animated.div style={elAnim} className="flex-initial flex flex-col gap-2">
-				<Link
-					href="https://www.linkedin.com/in/roneilla/"
-					target="_blank"
-					className="hover:underline">
-					LinkedIn ↗
-				</Link>
-				<Link
-					href="https://github.com/roneilla"
-					target="_blank"
-					className="hover:underline">
-					GitHub ↗
-				</Link>
-				<Link
-					href="mailto:roneillabumanlag@gmail.com"
-					target="_blank"
-					className="hover:underline">
-					Email ↗
-				</Link>
-			</animated.div>{' '}
-			<animated.div
-				style={elAnim}
-				className="flex-1 flex flex-col gap-2 items-end text-right">
-				<p>Built with NextJS & TailwindCSS</p>
-				<p>© Roneilla Bumanlag 2023</p>
-			</animated.div>
+		<footer className="footer text-black ">
+			<div className="container px-8 flex gap-4">
+				<animated.div
+					style={elAnim}
+					className="flex-initial flex flex-col gap-2">
+					<Link
+						href="https://www.linkedin.com/in/roneilla/"
+						target="_blank"
+						className="hover:underline">
+						LinkedIn ↗
+					</Link>
+					<Link
+						href="https://github.com/roneilla"
+						target="_blank"
+						className="hover:underline">
+						GitHub ↗
+					</Link>
+					<Link
+						href="mailto:roneillabumanlag@gmail.com"
+						target="_blank"
+						className="hover:underline">
+						Email ↗
+					</Link>
+				</animated.div>{' '}
+				<animated.div
+					style={elAnim}
+					className="flex-1 flex flex-col gap-2 items-end text-right">
+					<p>Built with NextJS & TailwindCSS</p>
+					<p>© Roneilla Bumanlag 2023</p>
+				</animated.div>
+			</div>
 		</footer>
 	);
 };
