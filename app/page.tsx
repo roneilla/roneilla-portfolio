@@ -28,9 +28,14 @@ const Home = () => {
 	return (
 		<PageTransition>
 			<div className="section">
-				<div className="mt-16">
-					<h1>
-						<HeaderName />
+				<div className="sm:mt-8 md:mt-16">
+					<h1 className="h1 displayFont">
+						<span className="hidden sm:block">
+							<HeaderName />
+						</span>
+						<span className="sm:hidden splitAnim">
+							<TextSplitAnim initDelay={0.5} text={`Roneilla Bumanlag`} />
+						</span>
 					</h1>
 				</div>
 				{/* <div className="mt-8 sm:w-2/3">
@@ -39,7 +44,7 @@ const Home = () => {
 					</h1>
 				</div> */}
 
-				<div className="mt-8 sm:w-1/2">
+				<div className="mt-4 sm:mt-8 sm:w-1/2">
 					<p className="text-xl splitAnim">
 						<LineSplitAnim
 							initDelay={1.25}

@@ -4,7 +4,7 @@ import LineSplitAnim from './LineSplitAnim';
 
 const ProjectHeader = ({ title, description, role }: any) => {
 	return (
-		<div className="mt-8 md:w-2/3">
+		<div className="sm:mt-8 md:w-2/3">
 			<h1 className="h1 displayFont splitAnim">
 				<TextSplitAnim text={title} />
 			</h1>

@@ -132,7 +132,7 @@ body {
 
 @layer components {
 	.h1 {
-		@apply text-7xl sm:text-8xl;
+		@apply text-6xl sm:text-8xl;
 	}
 
 	.h2 {

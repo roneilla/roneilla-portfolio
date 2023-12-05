@@ -68,11 +68,11 @@ const Footer = () => {
 						className="hover:underline">
 						Email ↗
 					</Link>
-				</animated.div>{' '}
+				</animated.div>
 				<animated.div
 					style={elAnim}
 					className="flex-1 flex flex-col gap-2 items-end text-right">
-					<p>Built with NextJS & TailwindCSS</p>
+					<p>Built with NextJS</p>
 					<p>© Roneilla Bumanlag 2023</p>
 				</animated.div>
 			</div>
