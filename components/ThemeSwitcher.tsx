@@ -42,7 +42,9 @@ const ThemeSwitcher = () => {
 		config: properties.springConfig,
 	});
 
-	const color = theme === 'dark' ? '#F9C81C' : '#F8E08C';
+	// const color = theme === 'dark' ? '#F9C81C' : '#F8E08C';
+
+	const color = '#0A1F68';
 
 	return (
 		<button

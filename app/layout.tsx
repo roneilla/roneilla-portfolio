@@ -21,9 +21,8 @@ export default function RootLayout({
 			<body className={`body`}>
 				<Loader />
 
-				<Nav />
-
 				<div className="page">
+					<Nav />
 					<div className="container">{children}</div>
 				</div>
 				<Footer />

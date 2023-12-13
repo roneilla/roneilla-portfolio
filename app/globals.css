@@ -147,12 +147,50 @@ body {
 		@apply text-base hover:bg-gray-100 rounded-full px-2 py-1;
 	}
 
+	.nav {
+		@apply z-20 fixed top-0 left-0 w-full;
+		mix-blend-mode: exclusion;
+	}
+
+	svg.navLogo {
+		@apply fill-white dark:fill-black;
+	}
+
+	.nav > .container {
+		@apply text-white dark:text-black;
+	}
+
 	.page {
 		@apply z-10 relative bg-white dark:bg-black;
 
-		border-radius: 0 0 30px 30px;
+		/* border-radius: 0 0 30px 30px; */
+		padding-top: 64px;
+		margin-bottom: 370px;
+	}
 
-		margin-bottom: 150px;
+	.footer {
+		@apply fixed bottom-0 w-full box-border flex justify-between;
+
+		height: 370px;
+		background-color: #dcddfb;
+
+		z-index: 1;
+	}
+
+	.footer-btn {
+		@apply text-center p-8;
+		width: 50%;
+	}
+
+	.footer-btn-left {
+		border-left: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+
+	.footer-btn-right {
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		border-bottom: 1px solid black;
 	}
 
 	.container {
@@ -249,15 +287,6 @@ body {
 	max-height: 1.5rem;
 	width: auto;
 	cursor: pointer;
-}
-
-.footer {
-	@apply fixed bottom-0 w-full p-8 box-border flex  justify-between;
-
-	height: 150px;
-	background-color: #dcddfb;
-
-	z-index: 1;
 }
 
 .r-p0 {

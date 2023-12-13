@@ -45,37 +45,55 @@ const Footer = () => {
 	});
 
 	return (
-		<footer className="footer text-black ">
-			<div className="container px-8 flex gap-4">
-				<animated.div
-					style={elAnim}
-					className="flex-initial flex flex-col gap-2">
+		<footer className="footer text-black flex flex-col">
+			<animated.div
+				style={elAnim}
+				className="text-center border border-solid border-black py-16">
+				<Link
+					href="mailto:roneillabumanlag@gmail.com"
+					target="_blank"
+					className="hover:underline text-6xl displayFont">
+					roneillabumanlag@gmail.com
+				</Link>
+			</animated.div>
+			{/* <div className="container  flex "> */}
+			<animated.div style={elAnim} className="flex flex-wrap">
+				<div className="footer-btn footer-btn-left">
 					<Link
 						href="https://www.linkedin.com/in/roneilla/"
 						target="_blank"
 						className="hover:underline">
 						LinkedIn ↗
 					</Link>
+				</div>
+				<div className="footer-btn footer-btn-right">
 					<Link
 						href="https://github.com/roneilla"
 						target="_blank"
 						className="hover:underline">
 						GitHub ↗
 					</Link>
-					<Link
+				</div>
+				{/* <Link
 						href="mailto:roneillabumanlag@gmail.com"
 						target="_blank"
 						className="hover:underline">
 						Email ↗
-					</Link>
-				</animated.div>
-				<animated.div
+					</Link> */}
+				<div className="footer-btn footer-btn-left">
+					<p>Built with NextJS</p>
+				</div>
+				<div className="footer-btn footer-btn-right">
+					<p>© Roneilla Bumanlag 2023</p>
+				</div>
+			</animated.div>
+			{/* <animated.div
 					style={elAnim}
 					className="flex-1 flex flex-col gap-2 items-end text-right">
 					<p>Built with NextJS</p>
 					<p>© Roneilla Bumanlag 2023</p>
-				</animated.div>
-			</div>
+				</animated.div> */}
+			{/* </div> */}
 		</footer>
 	);
 };

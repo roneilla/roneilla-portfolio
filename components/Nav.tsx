@@ -61,7 +61,7 @@ const Nav = () => {
 
 	return (
 		<>
-			<animated.div className={`bg-white dark:bg-black z-20 `}>
+			<animated.div className="nav">
 				<div className="container px-8 md:px-12 py-4 flex gap-4 items-center">
 					{pathname != '/' ? (
 						<Button
