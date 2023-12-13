@@ -11,16 +11,13 @@ import ProjectHeader from '@/components/ProjectHeader';
 import ProjectFooter from '@/components/ProjectFooter';
 import ElTransition from '@/components/ElTransition';
 import CreditSection from '@/components/CreditSection';
+import projectData from '../data';
 
 const Peanuts = () => {
 	return (
 		<PageTransition>
 			<div className="section">
-				<ProjectHeader
-					title={`Schroeder's Piano`}
-					description={`Creating a physical and digital interactive experience for a Snoopy-themed exhibit`}
-					role={`Interaction Designer & Developer`}
-				/>
+				<ProjectHeader />
 
 				<div className="rounded mt-8">
 					<Lightbox imgSrc={Header} header={true} />

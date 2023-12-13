@@ -13,12 +13,7 @@ const Mush = () => {
 	return (
 		<PageTransition>
 			<div className="section">
-				<ProjectHeader
-					title={`Super Mushroom filter`}
-					description={`An Instagram filter of a mushroom haircut to promote Freshii’s Super
-						Mushroom gummies`}
-					role={`Interaction Designer & Developer`}
-				/>
+				<ProjectHeader />
 				<div className="rounded mt-8">
 					<Video src={'https://www.youtube.com/watch?v=GjFVKu3kSM4'} />
 				</div>

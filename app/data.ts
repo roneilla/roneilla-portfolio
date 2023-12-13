@@ -10,8 +10,9 @@ const projectData = [
 		title: `Schroeder’s piano`,
 		link: '/schroeders-piano',
 		description:
-			'Creating a physical and digital interactive experience for a Snoopy-themed exhibit',
+			'Creating an interactive piano experience for a Snoopy-themed exhibit',
 		image: Peanuts,
+		role: 'Interaction Designer & Developer',
 	},
 	{
 		id: 'tpol',
@@ -20,6 +21,7 @@ const projectData = [
 		description:
 			'Increasing financial literacy in 10th Graders through the intersection of board game and technology',
 		image: Tpol,
+		role: 'Interaction Designer & Developer',
 	},
 	{
 		id: 'tippt',
@@ -28,6 +30,7 @@ const projectData = [
 		description:
 			'Creating a sustainable platform to help users make sustainable restaurant choices',
 		image: Tippt,
+		role: 'UX Designer',
 	},
 	{
 		id: 'splinterD',
@@ -36,6 +39,7 @@ const projectData = [
 		description:
 			'An AR scavenger hunt adventure through a park in Toronto for Luminato festival',
 		image: Sd,
+		role: 'Interaction Designer & Developer',
 	},
 	{
 		id: 'freshii',

@@ -20,12 +20,7 @@ const Tpol = () => {
 	return (
 		<PageTransition>
 			<div className="section">
-				<ProjectHeader
-					title={`The Price of Life`}
-					description={`An educational board game that teaches young adults the basics of
-						personal finance, strategy, and planning.`}
-					role={`Interaction Designer & Developer`}
-				/>
+				<ProjectHeader />
 				<div className="rounded mt-8">
 					<Video src={'https://www.youtube.com/watch?v=IDXo6CgnCGc'} />
 				</div>

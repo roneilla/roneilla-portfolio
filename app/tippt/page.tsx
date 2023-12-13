@@ -10,17 +10,13 @@ import ProjectHeader from '@/components/ProjectHeader';
 import ProjectFooter from '@/components/ProjectFooter';
 import ElTransition from '@/components/ElTransition';
 import CreditSection from '@/components/CreditSection';
+import { usePathname } from 'next/navigation';
 
 const Tippt = () => {
 	return (
 		<PageTransition>
 			<div className="section">
-				<ProjectHeader
-					title={`Tippt`}
-					description={`Creating a sustainable platform to help users make sustainable
-						restaurant choices`}
-					role={`UX Designer`}
-				/>
+				<ProjectHeader />
 				<div className="rounded mt-8">
 					<Lightbox header imgSrc={Header} />
 				</div>

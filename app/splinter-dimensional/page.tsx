@@ -23,12 +23,7 @@ const SdAr = () => {
 	return (
 		<PageTransition>
 			<div className="section">
-				<ProjectHeader
-					title={`Splinter Dimensional`}
-					description={`AR scavenger hunt adventure through a park in Toronto for Luminato
-						Festival`}
-					role={`Interaction Designer & Developer`}
-				/>
+				<ProjectHeader />
 				<div className="rounded mt-8">
 					<Video src={'https://www.youtube.com/watch?v=JuLZMBKozaE'} />
 				</div>

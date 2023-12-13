@@ -74,7 +74,7 @@ const WorkCard = ({ id, title, description, imgSrc, link, ind }: any) => {
 							style={{ clipPath: `url(#clip-${id})` }}
 							src={imgSrc}
 							alt=""
-							className="bg-gray-200 rounded h-72 workCardImg"
+							className="bg-gray-200 rounded h-72 workCardImg dark:bg-black"
 						/>
 						<p className="text-xl mt-4 mb-1">{title}</p>
 						<p className="text-gray-500 dark:text-gray-300">{description}</p>
