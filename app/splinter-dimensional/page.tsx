@@ -15,6 +15,10 @@ import ProjectFooter from '@/components/ProjectFooter';
 import ElTransition from '@/components/ElTransition';
 import CreditSection from '@/components/CreditSection';
 
+import RoadSign from '@/app/assets/sd/road-sign.jpg';
+import MarketingPromo from '@/app/assets/sd/marketing-promo.jpg';
+import SdMap from '@/app/assets/sd/sd-map.png';
+
 const SdAr = () => {
 	return (
 		<PageTransition>
@@ -27,6 +31,19 @@ const SdAr = () => {
 				/>
 				<div className="rounded mt-8">
 					<Video src={'https://www.youtube.com/watch?v=JuLZMBKozaE'} />
+				</div>
+
+				<div className="mt-8">
+					<Lightbox imgSrc={MarketingPromo} />
+
+					<div className="flex gap-4 mt-8 flex-col sm:flex-row imgHeight">
+						<div className="flex-1">
+							<Lightbox imgSrc={SdMap} />
+						</div>
+						<div className="flex-1">
+							<Lightbox imgSrc={RoadSign} />
+						</div>
+					</div>
 				</div>
 
 				<div className="mt-12">
@@ -50,7 +67,7 @@ const SdAr = () => {
 						</ElTransition>
 					</div>
 
-					<div className="flex gap-4 mt-4 flex-col sm:flex-row imgHeight">
+					<div className="flex gap-4 mt-8 flex-col sm:flex-row imgHeight">
 						<Lightbox
 							background="sd-pink"
 							imgSrc={Intro}
@@ -79,7 +96,7 @@ const SdAr = () => {
 						</ElTransition>
 					</div>
 
-					<div className="flex gap-4 mt-4 flex-col sm:flex-row">
+					<div className="flex gap-4 mt-8 flex-col sm:flex-row">
 						<Lightbox
 							background="sd-blue"
 							imgSrc={Pineapple}
@@ -109,7 +126,7 @@ const SdAr = () => {
 						</ElTransition>
 					</div>
 
-					<div className="flex gap-4 mt-4 flex-col sm:flex-row">
+					<div className="flex gap-4 mt-8 flex-col sm:flex-row">
 						<Lightbox
 							background="sd-pink"
 							imgSrc={Dance}
