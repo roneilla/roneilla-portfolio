@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'PP Right Serif';
+	src: url('PP Right Serif - Light.woff2') format('woff2'),
+		url('PP Right Serif - Light.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PP Neue Montreal';
+	src: url('PPNeueMontreal-Regular.woff2') format('woff2'),
+		url('PPNeueMontreal-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PP Neue Montreal';
+	src: url('PPNeueMontreal-Medium.woff2') format('woff2'),
+		url('PPNeueMontreal-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+/* ::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-white dark:bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply border-white border border-solid;
+	background: #dcddfb;
+
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #dcddfb;
+} */
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+.svgLogo {
+	@apply fill-black dark:fill-white;
+}
+
+body {
+	/* cursor: url('assets/arrow.png'), auto; */
+
+	-webkit-font-smoothing: antialiased;
+	font-family: 'PP Neue Montreal', sans-serif;
+
+	background: #dcddfb;
+}
+
+::selection {
+	background-color: #f2f3fd;
+	color: #7879bd;
+}
+
+* {
+	transition: background-color 0.25s ease-in;
+}
+
+.button {
+	@apply rounded-full;
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+	text-align: center;
+
+	font-size: 14px;
+
+	padding: 8px 16px;
+
+	transition: all 0.5s;
+	cursor: pointer;
+
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.buttonWithArrow:after {
+	content: '←';
+	position: absolute;
+	opacity: 0;
+	top: 8px;
+	left: -8px;
+	transition: 0.5s;
+}
+
+.buttonWithArrow:hover {
+	padding-left: 30px;
+	padding-right: 8px;
+
+	/* border-color: #7879bd;
+	color: #7879bd; */
+}
+
+.buttonWithArrow:hover:after {
+	opacity: 1;
+	left: 8px;
+}
+
+.displayFont {
+	/* font-family: 'PP Right Serif', sans-serif; */
+}
+
+@layer components {
+	.h1 {
+		@apply text-3xl font-normal;
+	}
+
+	.h2 {
+		@apply text-2xl;
+	}
+
+	.h3 {
+		@apply text-xl;
+	}
+
+	.navlink {
+		@apply text-base hover:bg-gray-100 rounded-full px-2 py-1;
+	}
+
+	.page {
+		@apply z-10 relative bg-white dark:bg-black;
+
+		margin-bottom: 150px;
+	}
+
+	.container {
+		@apply max-w-screen-2xl mx-auto pb-1;
+	}
+
+	.section {
+		@apply w-full px-8 md:px-8 py-8;
+	}
+
+	.body {
+		@apply text-black dark:text-white;
+	}
+}
+
+.workCard {
+	width: 33.33%;
+}
+
+.workCardImg {
+	width: 100%;
+	box-sizing: border-box;
+	transition: border 0.2s ease-in;
+	object-fit: cover;
+}
+
+.workCardImg:hover {
+	/* border: 8px solid #dcddfb; */
+}
+
+.lightBoxImg {
+	width: auto;
+	max-height: calc(100vh - 4rem);
+	object-fit: contain;
+}
+
+.imgHeight {
+}
+
+.imgContainer {
+	@apply p-8 lg:p-16 flex items-center justify-center box-border;
+	max-height: calc(100vh - 8rem);
+}
+
+.phoneImg {
+	height: 100%;
+	width: auto;
+	max-height: calc(100vh - 12rem);
+}
+
+.sd-pink {
+	background-color: #f5bffa;
+}
+
+.sd-blue {
+	background-color: #bfdefc;
+}
+
+.sd-purple {
+	background-color: #e8c0fe;
+}
+
+.freshii-green {
+	background-color: #639760;
+}
+
+.tpol-yellow {
+	background-color: #f0c418;
+}
+
+.tpol-blue {
+	background-color: #4f73b6;
+}
+.trans {
+	top: 100vh;
+}
+
+.backdrop {
+	@apply fixed top-0 left-0 w-screen h-screen z-30 bg-black;
+}
+
+.lightbox {
+	@apply scale-0 fixed top-0 left-0 w-screen h-screen p-4 z-40 flex items-center justify-center flex-col origin-center;
+}
+
+.lightbox img {
+	@apply w-auto h-auto object-contain;
+	max-height: calc(100vh - 7rem);
+}
+
+.navLogo {
+	max-height: 1.5rem;
+	width: auto;
+	cursor: pointer;
+}
+
+.footer {
+	@apply fixed bottom-0 w-full p-8 box-border flex  justify-between;
+
+	height: 150px;
+	background-color: #dcddfb;
+
+	z-index: 1;
+}
+
+.r-p0 {
+	background-color: #7879bd;
+}
+
+.r-p1 {
+	background-color: #adaedd;
+}
+.r-p2 {
+	background-color: #dcddfb;
+}
+.r-p3 {
+	background-color: #f2f3fd;
+}
+
+.purple-border {
+	border-bottom: 1px solid #dcddfb;
+}
+.footerBtn {
+	transition: color 0.5 ease-in;
+}
+
+.footerBtn:hover {
+	color: #7879bd;
+}
+
+.splitAnim span span {
+	position: relative;
+	opacity: 0;
+	animation: move-text 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes move-text {
+	0% {
+		bottom: -0.2em;
+		opacity: 0;
+	}
+	/* 50% {
+		bottom: 0.2em;
+	} */
+	100% {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+.headerAnim g {
+	opacity: 0;
+	animation: move-letter 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes move-letter {
+	0% {
+		transform: translate(0px, 16px);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
