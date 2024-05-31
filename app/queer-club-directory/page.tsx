@@ -8,12 +8,21 @@ import ProjectFooter from '@/components/ProjectFooter';
 import CreditSection from '@/components/CreditSection';
 
 import Header from '@/app/assets/queerdirectory/header.png';
+import TabsF from '@/app/assets/queerdirectory/tabs-featurette.png';
+import StyleGuide from '@/app/assets/queerdirectory/styleguide.png';
 
 const Qcdt = () => {
 	return (
 		<PageTransition>
 			<div className="section">
 				<ProjectHeader />
+
+				<div className="mt-8">
+					<Lightbox imgSrc={TabsF} header={true} />
+				</div>
+				<div className="mt-8">
+					<Lightbox imgSrc={StyleGuide} header={true} />
+				</div>
 
 				<div className="mt-8">
 					<Lightbox imgSrc={Header} header={true} />

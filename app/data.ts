@@ -31,7 +31,7 @@ const projectData = [
 		title: 'Queer Club Directory Toronto',
 		link: '/queer-club-directory',
 		description:
-			'A directory to help queer folx in Toronto find clubs or groups by interest.',
+			'A directory to help queer folx in Toronto find clubs or groups by interest',
 		image: Qcdt,
 		role: 'Interaction Designer & Developer',
 		size: 'w-full md:w-2/6',
