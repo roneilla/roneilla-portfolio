@@ -62,14 +62,13 @@ const Wpds = () => {
 				</div>
 				<CreditSection
 					firstCol={{
-						title: 'About',
-						body: `This is an individual side project.`,
+						title: 'Team',
+						body: <>Designers and developers at Wagepoint</>,
 					}}
 					secondCol={{
 						title: 'Year',
-						body: '2024',
+						body: '2022-2024',
 					}}
-					link="https://wagepoint.com/"
 				/>
 			</div>
 			<ProjectFooter />
