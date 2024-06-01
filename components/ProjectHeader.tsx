@@ -11,7 +11,7 @@ const ProjectHeader = () => {
 	const index = projectData.findIndex((data) => data.link === pathname);
 
 	return (
-		<div className="sm:mt-8 md:w-2/3">
+		<div className="sm:mt-8 md:w-2/3 pb-8">
 			<h1 className="h1 splitAnim">
 				<TextSplitAnim text={projectData[index].title} />
 			</h1>
@@ -21,12 +21,12 @@ const ProjectHeader = () => {
 					initDelay={0.75}
 				/>
 			</p>
-			<p className="text-gray-500 dark:text-gray-300 mt-8 splitAnim">
+			{/* <p className="text-gray-500 dark:text-gray-300 mt-8 splitAnim">
 				<LineSplitAnim
 					text={[`Role: ${projectData[index].role}`]}
 					initDelay={1}
 				/>
-			</p>
+			</p> */}
 		</div>
 	);
 };

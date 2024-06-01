@@ -4,8 +4,29 @@ import Sd from '@/app/assets/sd-thumbnail.png';
 import Tpol from '@/app/assets/tpol-thumbnail.png';
 import Qcdt from '@/app/assets/qcdt-thumbnail.png';
 import Freshii from '@/app/assets/freshii-thumbnail.png';
+import Wpds from '@/app/assets/wpds-thumbail.png';
+import AlfredSearch from '@/app/assets/alfredsearch-thumbail.png';
 
 const projectData = [
+	{
+		id: 'wp-alfredsearch',
+		title: `Wagepoint Alfred Search`,
+		link: '/wagepoint-alfred-search',
+		description: 'Improving the search function for internal support agents',
+		image: AlfredSearch,
+		role: 'UX Designer & Developer',
+		size: 'w-full md:w-4/6',
+	},
+	{
+		id: 'wp-ds',
+		title: `Wagepoint Design System`,
+		link: '/wagepoint-design-system',
+		description:
+			'Creating a scalable design system for a multi-product company',
+		image: Wpds,
+		role: 'UX Designer & Developer',
+		size: 'w-full md:w-2/6',
+	},
 	{
 		id: 'schroeder',
 		title: `Schroeder’s piano`,
