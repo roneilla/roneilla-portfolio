@@ -63,7 +63,7 @@ const AlfredSearch = () => {
 						title: 'Team',
 						body: (
 							<>
-								UX Designer: Stephanie Tsang
+								UX designer: Stephanie Tsang
 								<br /> UX designer & developer: Roneilla Bumanlag
 							</>
 						),
