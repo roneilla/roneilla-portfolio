@@ -60,16 +60,6 @@ const Wpds = () => {
 						<Lightbox imgSrc={HelpCentreF} header={true} />
 					</div>
 				</div>
-				<CreditSection
-					firstCol={{
-						title: 'Team',
-						body: <>Designers and developers at Wagepoint</>,
-					}}
-					secondCol={{
-						title: 'Year',
-						body: '2022-2024',
-					}}
-				/>
 			</div>
 			<ProjectFooter />
 		</PageTransition>
