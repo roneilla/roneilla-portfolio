@@ -27,7 +27,7 @@ const Peanuts = () => {
 					<Video src={'https://www.youtube.com/watch?v=LMhIu9lH2Xs'} />
 				</div>
 
-				<div className="flex gap-4 mt-12 flex-col sm:flex-row">
+				<div className="flex gap-8 mt-8 flex-col sm:flex-row">
 					<div className="flex-1">
 						<Lightbox imgSrc={Wide} />
 					</div>

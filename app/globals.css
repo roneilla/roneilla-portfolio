@@ -173,7 +173,7 @@ body {
 .workCardImg {
 	width: 100%;
 	box-sizing: border-box;
-	transition: border 0.2s ease-in;
+	transition: all 0.1s ease-in-sine;
 	object-fit: cover;
 }
 
@@ -192,13 +192,17 @@ body {
 
 .imgContainer {
 	@apply p-8 lg:p-16 flex items-center justify-center box-border;
-	max-height: calc(100vh - 8rem);
+	max-height: 600px;
+}
+
+.imgContainer img {
+	@apply w-auto;
 }
 
 .phoneImg {
 	height: 100%;
 	width: auto;
-	max-height: calc(100vh - 12rem);
+	max-height: 600px;
 }
 
 .sd-pink {

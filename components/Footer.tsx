@@ -46,7 +46,7 @@ const Footer = () => {
 
 	return (
 		<footer className="footer text-black ">
-			<div className="container px-4 flex gap-4">
+			<div className="container px-4 flex gap-8">
 				<animated.div
 					style={elAnim}
 					className="flex-initial flex flex-col gap-2">

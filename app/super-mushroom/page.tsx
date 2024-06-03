@@ -17,7 +17,7 @@ const Mush = () => {
 				<div className="rounded mt-8">
 					<Video src={'https://www.youtube.com/watch?v=GjFVKu3kSM4'} />
 				</div>
-				<div className="flex gap-4 mt-12 flex-col sm:flex-row">
+				<div className="flex gap-8 mt-12 flex-col sm:flex-row">
 					<Lightbox
 						background="freshii-green"
 						imgSrc={FreshiiFilter}

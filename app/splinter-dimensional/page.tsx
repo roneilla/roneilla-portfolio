@@ -31,7 +31,7 @@ const SdAr = () => {
 				<div className="mt-8">
 					<Lightbox imgSrc={MarketingPromo} />
 
-					<div className="flex gap-4 mt-8 flex-col sm:flex-row imgHeight">
+					<div className="flex gap-8 mt-8 flex-col sm:flex-row imgHeight">
 						<div className="flex-1">
 							<Lightbox imgSrc={SdMap} />
 						</div>
@@ -62,7 +62,7 @@ const SdAr = () => {
 						</ElTransition>
 					</div>
 
-					<div className="flex gap-4 mt-8 flex-col sm:flex-row imgHeight">
+					<div className="flex gap-8 mt-8 flex-col sm:flex-row imgHeight">
 						<Lightbox
 							background="sd-pink"
 							imgSrc={Intro}
@@ -91,7 +91,7 @@ const SdAr = () => {
 						</ElTransition>
 					</div>
 
-					<div className="flex gap-4 mt-8 flex-col sm:flex-row">
+					<div className="flex gap-8 mt-8 flex-col sm:flex-row">
 						<Lightbox
 							background="sd-blue"
 							imgSrc={Pineapple}
@@ -121,7 +121,7 @@ const SdAr = () => {
 						</ElTransition>
 					</div>
 
-					<div className="flex gap-4 mt-8 flex-col sm:flex-row">
+					<div className="flex gap-8 mt-8 flex-col sm:flex-row">
 						<Lightbox
 							background="sd-pink"
 							imgSrc={Dance}

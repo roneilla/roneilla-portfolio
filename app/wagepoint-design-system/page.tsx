@@ -29,8 +29,8 @@ const Wpds = () => {
 						<ElTransition>
 							<p>
 								I worked closely with the design and front-end development team
-								to build a new table component that is more performant, easier
-								to maintain, and easy to scale for mobile views.
+								to build a new table component that is more performant,
+								maintainable, and easy to scale for mobile views.
 							</p>
 						</ElTransition>
 					</div>

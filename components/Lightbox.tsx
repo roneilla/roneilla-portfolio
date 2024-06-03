@@ -13,6 +13,7 @@ const Lightbox = ({
 	description,
 	background,
 	header,
+	maxHeight,
 }: any) => {
 	const [open, setOpen] = useState(false);
 	const ref = useRef<any>(null);
@@ -84,6 +85,7 @@ const Lightbox = ({
 		return (
 			<ElTransition>
 				<Image
+					style={{ maxHeight: maxHeight || 'none' }}
 					priority={header}
 					src={imgSrc}
 					alt={altText}
