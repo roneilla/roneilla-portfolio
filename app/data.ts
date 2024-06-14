@@ -9,6 +9,16 @@ import AlfredSearch from '@/app/assets/alfredsearch-thumbail.png';
 
 const projectData = [
 	{
+		id: 'qcdt',
+		title: 'Queer Club Directory Toronto',
+		link: '/queer-club-directory',
+		description:
+			'A directory to help queer folx in Toronto find clubs or groups by interest',
+		image: Qcdt,
+		role: 'Interaction Designer & Developer',
+		size: 'w-full md:w-2/6',
+	},
+	{
 		id: 'wp-alfredsearch',
 		title: `Wagepoint Alfred Search`,
 		link: '/wagepoint-alfred-search',
@@ -16,16 +26,6 @@ const projectData = [
 		image: AlfredSearch,
 		role: 'UX Designer & Developer',
 		size: 'w-full md:w-4/6',
-	},
-	{
-		id: 'wp-ds',
-		title: `Wagepoint Design System`,
-		link: '/wagepoint-design-system',
-		description:
-			'Creating a scalable design system for a multi-product company',
-		image: Wpds,
-		role: 'UX Designer & Developer',
-		size: 'w-full md:w-2/6',
 	},
 	{
 		id: 'schroeder',
@@ -48,13 +48,13 @@ const projectData = [
 		size: 'w-full md:w-1/2',
 	},
 	{
-		id: 'qcdt',
-		title: 'Queer Club Directory Toronto',
-		link: '/queer-club-directory',
+		id: 'wp-ds',
+		title: `Wagepoint Design System`,
+		link: '/wagepoint-design-system',
 		description:
-			'A directory to help queer folx in Toronto find clubs or groups by interest',
-		image: Qcdt,
-		role: 'Interaction Designer & Developer',
+			'Creating a scalable design system for a multi-product company',
+		image: Wpds,
+		role: 'UX Designer & Developer',
 		size: 'w-full md:w-2/6',
 	},
 	{
