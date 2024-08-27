@@ -28,6 +28,26 @@ const projectData = [
 		size: 'w-full md:w-4/6',
 	},
 	{
+		id: 'tpol',
+		title: 'The Price of Life',
+		link: '/the-price-of-life',
+		description:
+			'Increasing financial literacy in 10th Graders through the intersection of board game and technology',
+		image: Tpol,
+		role: 'Interaction Designer & Developer',
+		size: 'w-full md:w-4/6',
+	},
+	{
+		id: 'wp-ds',
+		title: `Wagepoint Design System`,
+		link: '/wagepoint-design-system',
+		description:
+			'Creating a scalable design system for a multi-product company',
+		image: Wpds,
+		role: 'UX Designer & Developer',
+		size: 'w-full md:w-2/6',
+	},
+	{
 		id: 'schroeder',
 		title: `Schroeder’s piano`,
 		link: '/schroeders-piano',
@@ -46,26 +66,6 @@ const projectData = [
 		image: Tippt,
 		role: 'UX Designer',
 		size: 'w-full md:w-1/2',
-	},
-	{
-		id: 'wp-ds',
-		title: `Wagepoint Design System`,
-		link: '/wagepoint-design-system',
-		description:
-			'Creating a scalable design system for a multi-product company',
-		image: Wpds,
-		role: 'UX Designer & Developer',
-		size: 'w-full md:w-2/6',
-	},
-	{
-		id: 'tpol',
-		title: 'The Price of Life',
-		link: '/the-price-of-life',
-		description:
-			'Increasing financial literacy in 10th Graders through the intersection of board game and technology',
-		image: Tpol,
-		role: 'Interaction Designer & Developer',
-		size: 'w-full md:w-4/6',
 	},
 	{
 		id: 'splinterD',
