@@ -306,11 +306,11 @@ body {
 }
 
 .borderCard {
-	@apply p-4 border border-solid border-gray-200 rounded flex-1;
+	@apply px-6 py-8 border border-solid border-gray-200 rounded-lg flex-1;
 }
 
 .blueCard {
-	@apply p-4 border border-solid bg-slate-200 rounded flex-1;
+	@apply px-6 py-8 bg-slate-100 rounded-lg flex-1;
 }
 
 .greyBtn {

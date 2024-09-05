@@ -27,7 +27,7 @@ const AlfredSearch = () => {
 				</div>
 
 				<div className="mt-24">
-					<div className="sm:w-1/2">
+					<div className="md:w-1/2">
 						<ElTransition>
 							<p className="monoFont mb-4 text-sm">The problem</p>
 						</ElTransition>
@@ -48,7 +48,7 @@ const AlfredSearch = () => {
 							</p>
 						</ElTransition>
 					</div>
-					<div className="flex space-between gap-4 mt-4 flex-col md:flex-row">
+					<div className="flex space-between gap-4 mt-6 flex-col md:flex-row">
 						<div className="borderCard">
 							<p>
 								Agents would receive emails from administrators who weren’t
@@ -102,7 +102,7 @@ const AlfredSearch = () => {
 								The search functions were nested in two different pages, one for
 								clients and one for partners.
 							</p>
-							<button className="greyBtn mt-2">Focus on this</button>
+							{/* <button className="greyBtn mt-2">Focus on this</button> */}
 						</div>
 						<div className="flex-1">
 							<p className="font-medium">Lack of system status</p>
@@ -111,7 +111,7 @@ const AlfredSearch = () => {
 								results did not display what information matches the search
 								criteria.
 							</p>
-							<button className="greyBtn mt-2">Focus on this</button>
+							{/* <button className="greyBtn mt-2">Focus on this</button> */}
 						</div>
 						<div className="flex-1">
 							<p className="font-medium">Inflexibility</p>
@@ -119,7 +119,7 @@ const AlfredSearch = () => {
 								The search criteria was lacking. Agents couldn’t quickly find
 								what they needed with the information they had.
 							</p>
-							<button className="greyBtn mt-2">Focus on this</button>
+							{/* <button className="greyBtn mt-2">Focus on this</button> */}
 						</div>
 					</div>
 				</div>
