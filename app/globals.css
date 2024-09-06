@@ -37,6 +37,14 @@
 	font-style: normal;
 	font-display: swap;
 }
+@font-face {
+	font-family: 'Luckybones Bold';
+	src: url('Luckybones-Bold.woff2') format('woff2'),
+		url('Luckybones-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
 
 :root {
 	--foreground-rgb: 0, 0, 0;
@@ -81,7 +89,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: 'PP Neue Montreal', sans-serif;
 
-	background: #dcddfb;
+	/* background: #dcddfb; */
 }
 
 ::selection {
@@ -144,6 +152,10 @@ body {
 	@apply uppercase;
 }
 
+.funFont {
+	font-family: 'Luckybones Bold', sans-serif;
+}
+
 @layer components {
 	.h1 {
 		@apply text-3xl font-normal;
@@ -163,8 +175,6 @@ body {
 
 	.page {
 		@apply z-10 relative bg-white dark:bg-black;
-
-		margin-bottom: 150px;
 	}
 
 	.container {
@@ -265,15 +275,6 @@ body {
 	cursor: pointer;
 }
 
-.footer {
-	@apply fixed bottom-0 w-full p-8 box-border flex  justify-between;
-
-	height: 150px;
-	background-color: #dcddfb;
-
-	z-index: 1;
-}
-
 .r-p0 {
 	background-color: #7879bd;
 }
@@ -351,4 +352,8 @@ body {
 		transform: translate(0px, 0px);
 		opacity: 1;
 	}
+}
+
+.footerMaxH {
+	height: 600px;
 }

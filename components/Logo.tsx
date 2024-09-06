@@ -1,5 +1,4 @@
 'use client';
-import useTheme from '@/utils/useTheme';
 import React, { useEffect, useState } from 'react';
 
 const Logo = () => {
