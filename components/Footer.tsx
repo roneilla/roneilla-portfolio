@@ -62,7 +62,7 @@ const Footer = () => {
 			/>
 			<div className="w-full md:w-auto md:z-10 pb-4 md:pb-12 absolute">
 				<div className="px-4 text-center">
-					<p className="funFont md:hidden text-3xl mb-4 leading-6">
+					<p className="funFont md:hidden text-2xl mb-4 leading-6">
 						Thanks for
 						<br />
 						{`stickin'`} around!
@@ -72,19 +72,19 @@ const Footer = () => {
 						<Link
 							href="https://www.linkedin.com/in/roneilla/"
 							target="_blank"
-							className="hover:underline text-lg">
+							className="hover:underline md:text-lg">
 							LinkedIn ↗
 						</Link>
 						<Link
 							href="https://github.com/roneilla"
 							target="_blank"
-							className="hover:underline text-lg">
+							className="hover:underline md:text-lg">
 							GitHub ↗
 						</Link>
 						<Link
 							href="mailto:roneillabumanlag@gmail.com"
 							target="_blank"
-							className="hover:underline text-lg">
+							className="hover:underline md:text-lg">
 							Email ↗
 						</Link>
 					</div>
