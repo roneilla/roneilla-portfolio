@@ -18,7 +18,7 @@ const WorkCard = ({ id, title, description, imgSrc, link, ind, size }: any) => {
 					onMouseEnter={() => setHover(true)}
 					onMouseLeave={() => setHover(false)}>
 					<PageOutTransition link={link}>
-						<div className="overflow-hidden">
+						<div className="overflow-hidden rounded">
 							<Image
 								src={imgSrc}
 								alt=""
@@ -28,7 +28,7 @@ const WorkCard = ({ id, title, description, imgSrc, link, ind, size }: any) => {
 							/>
 						</div>
 						<p className="mt-4">{title}</p>
-						<p className="text-gray-500 dark:text-gray-300">{description}</p>
+						<p className="text-gray-600 dark:text-gray-300">{description}</p>
 					</PageOutTransition>
 				</div>
 			</div>

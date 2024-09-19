@@ -9,6 +9,15 @@ import AlfredSearch from '@/app/assets/alfredsearch-thumbail.png';
 
 const projectData = [
 	{
+		id: 'wp-alfredsearch',
+		title: `Wagepoint Global Search`,
+		link: '/wagepoint-alfred-search',
+		description: 'Improving the search function for internal support agents',
+		image: AlfredSearch,
+		role: 'UX Designer & Developer',
+		size: 'w-full md:w-4/6',
+	},
+	{
 		id: 'qcdt',
 		title: 'Queer Club Directory Toronto',
 		link: '/queer-club-directory',
@@ -17,15 +26,6 @@ const projectData = [
 		image: Qcdt,
 		role: 'Interaction Designer & Developer',
 		size: 'w-full md:w-2/6',
-	},
-	{
-		id: 'wp-alfredsearch',
-		title: `Wagepoint Alfred Search`,
-		link: '/wagepoint-alfred-search',
-		description: 'Improving the search function for internal support agents',
-		image: AlfredSearch,
-		role: 'UX Designer & Developer',
-		size: 'w-full md:w-4/6',
 	},
 	{
 		id: 'tpol',
@@ -37,16 +37,16 @@ const projectData = [
 		role: 'Interaction Designer & Developer',
 		size: 'w-full md:w-4/6',
 	},
-	{
-		id: 'wp-ds',
-		title: `Wagepoint Design System`,
-		link: '/wagepoint-design-system',
-		description:
-			'Creating a scalable design system for a multi-product company',
-		image: Wpds,
-		role: 'UX Designer & Developer',
-		size: 'w-full md:w-2/6',
-	},
+	// {
+	// 	id: 'wp-ds',
+	// 	title: `Wagepoint Design System`,
+	// 	link: '/wagepoint-design-system',
+	// 	description:
+	// 		'Creating a scalable design system for a multi-product company',
+	// 	image: Wpds,
+	// 	role: 'UX Designer & Developer',
+	// 	size: 'w-full md:w-2/6',
+	// },
 	{
 		id: 'schroeder',
 		title: `Schroeder’s piano`,
@@ -77,14 +77,14 @@ const projectData = [
 		role: 'Interaction Designer & Developer',
 		size: 'w-full md:w-4/6',
 	},
-	{
-		id: 'freshii',
-		title: 'Super Mushroom filter',
-		link: '/super-mushroom',
-		description: `An Instagram filter of a mushroom haircut to promote Freshii’s Super Mushroom gummies`,
-		image: Freshii,
-		size: 'w-full md:w-2/6',
-	},
+	// {
+	// 	id: 'freshii',
+	// 	title: 'Super Mushroom filter',
+	// 	link: '/super-mushroom',
+	// 	description: `An Instagram filter of a mushroom haircut to promote Freshii’s Super Mushroom gummies`,
+	// 	image: Freshii,
+	// 	size: 'w-full md:w-2/6',
+	// },
 	// {
 	// 	id: '',
 	// 	title: '',

@@ -24,14 +24,14 @@ const ProjectFooter = () => {
 			<div className="flex justify-between px-8 py-16 mt-4">
 				<PageOutTransition link={projectData[prev].link} className="footerBtn">
 					<p className="text-xl">Previous</p>
-					<p className="text-gray-500 dark:text-gray-300">
+					<p className="text-gray-600 dark:text-gray-300">
 						{projectData[prev].title}
 					</p>
 				</PageOutTransition>
 				<PageOutTransition link={projectData[next].link} className="footerBtn">
 					<div className="text-right">
 						<p className="text-xl">Next</p>
-						<p className="text-gray-500 dark:text-gray-300">
+						<p className="text-gray-600 dark:text-gray-300">
 							{projectData[next].title}
 						</p>
 					</div>

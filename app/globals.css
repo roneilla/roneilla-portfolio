@@ -52,6 +52,10 @@
 	--background-end-rgb: 255, 255, 255;
 }
 
+img {
+	border-radius: 10px;
+}
+
 /* ::-webkit-scrollbar {
 	width: 6px;
 }
@@ -94,7 +98,7 @@ body {
 
 ::selection {
 	background-color: #f2f3fd;
-	color: #7879bd;
+	color: #41428b;
 }
 
 * {
@@ -178,7 +182,7 @@ body {
 	}
 
 	.container {
-		@apply max-w-screen-2xl mx-auto pb-1;
+		@apply max-w-screen-xl mx-auto pb-1;
 	}
 
 	.section {

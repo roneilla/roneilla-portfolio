@@ -22,7 +22,7 @@ const AlfredSearch = () => {
 		<PageTransition>
 			<div className="section">
 				<ProjectHeader />
-				<div className="mt-8">
+				<div className="mt-8 max-w-4xl mx-auto">
 					<Lightbox imgSrc={Header} header={true} />
 				</div>
 
@@ -40,11 +40,10 @@ const AlfredSearch = () => {
 							<p>
 								Wagepoint’s support agents use an internal tool called Alfred.
 								They have difficulty tracking down which company they’re
-								providing support to. Multiple agents mentioned spending time to
-								“carry out little investigations”, “deep dive”, and “dig around”
-								due to the lack of information the current search function
-								provides. Sometime they’d have to email back and forth for this
-								information.
+								providing support to. Multiple agents needing to spend time to
+								investigate due to the lack of information the current search
+								function provides. Sometimes they’d have to email back and forth
+								for this information.
 							</p>
 						</ElTransition>
 					</div>
@@ -74,9 +73,9 @@ const AlfredSearch = () => {
 				</div>
 
 				<div className="mt-24 py-24 text-center">
-					<p className="text-2xl">
+					<p className="text-2xl md:px-12">
 						“Some customers don’t tell us who they are in the ticket and their
-						email is generic. It’s a daily occurrence. It’s{' '}
+						email is [generic]. It’s a daily occurrence. It’s{' '}
 						<i>very very frustrating.</i>”
 					</p>
 					<p className="text-gray-700 mt-2">Customer support specialist</p>
@@ -125,20 +124,22 @@ const AlfredSearch = () => {
 				</div>
 
 				<div className="mt-24">
-					<ElTransition>
-						<p className="monoFont mb-4 text-sm">Listening to our users</p>
-					</ElTransition>
-					<ElTransition>
-						<h2 className="h2 displayFont mb-4">Requirements</h2>
-					</ElTransition>
-					<ElTransition>
-						<p>
-							We chatted with the Alfred users which included support agents,
-							payroll specialist, and risk agents to learn about what they
-							needed in order to lower frustrations and make their workload more
-							efficient.
-						</p>
-					</ElTransition>
+					<div className="md:w-1/2">
+						<ElTransition>
+							<p className="monoFont mb-4 text-sm">Listening to our users</p>
+						</ElTransition>
+						<ElTransition>
+							<h2 className="h2 displayFont mb-4">Requirements</h2>
+						</ElTransition>
+						<ElTransition>
+							<p>
+								We chatted with the Alfred users which included support agents,
+								payroll specialist, and risk agents to learn about what they
+								needed in order to lower frustrations and make their workload
+								more efficient.
+							</p>
+						</ElTransition>
+					</div>
 					<div className="flex space-between gap-4 mt-8 flex-col md:flex-row">
 						<div className="blueCard">
 							<p>Identify account type</p>
@@ -173,7 +174,7 @@ const AlfredSearch = () => {
 				</div>
 
 				<div className="mt-24 py-24 text-center">
-					<p className="text-2xl">
+					<p className="text-2xl md:px-12">
 						“Getting the insight before you potentially reach back out to a
 						client, it just makes you feel a little <i>more empowered</i>.”
 					</p>
@@ -187,7 +188,7 @@ const AlfredSearch = () => {
 						</h2>
 					</ElTransition>
 					<ElTransition>
-						<p>
+						<p className="w-1/2">
 							The most common search terms were admin name, email, or company
 							name. So we tested use cases based on multiple matching results
 							from the search criteria.
@@ -258,7 +259,7 @@ const AlfredSearch = () => {
 					</div>
 				</div>
 
-				<div className="mt-24">
+				<div className="mt-4">
 					<div className="p-8 rounded bg-yellow-50 flex gap-4">
 						<div>
 							<svg
@@ -302,7 +303,7 @@ const AlfredSearch = () => {
 						<h2 className="text-4xl mb-4">The Alfred Global Search</h2>
 					</ElTransition>
 					<ElTransition>
-						<p>
+						<p className="w-1/2">
 							The new search function lives in the global navigation bar,
 							allowing all users to access the search function from anywhere.
 							This also removes one step of the process as it allows agents to
