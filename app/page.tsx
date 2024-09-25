@@ -1,13 +1,16 @@
 'use client';
 import WorkCard from '@/components/WorkCard';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import projectData from './data';
 import PageTransition from '@/components/PageTransition';
 import LineSplitAnim from '@/components/LineSplitAnim';
 import { useSpring, animated, easings } from 'react-spring';
+import MouseCursor from '@/components/MouseCursor';
 
 const Home = () => {
+	const [hover, setHover] = useState(false);
+
 	const [cardProps, api] = useSpring(
 		() => ({
 			from: { opacity: 0, bottom: '-16px' },
@@ -22,6 +25,11 @@ const Home = () => {
 		}),
 		[]
 	);
+
+	useEffect(() => {
+		console.log(hover);
+	}, [hover]);
+
 	return (
 		<PageTransition>
 			<div className="px-8">
@@ -53,6 +61,8 @@ const Home = () => {
 				<div className="px-1 mt-2 flex flex-wrap mb-8">
 					{projectData.map((item: any, index: number) => (
 						<WorkCard
+							setHover={setHover}
+							hover={hover}
 							ind={index}
 							id={item.id}
 							key={item.id}
@@ -65,6 +75,7 @@ const Home = () => {
 					))}
 				</div>
 			</animated.div>
+			<MouseCursor hover={hover} />
 		</PageTransition>
 	);
 };
