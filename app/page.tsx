@@ -32,8 +32,8 @@ const Home = () => {
 
 	return (
 		<PageTransition>
-			<div className="px-8 mt-8 flex gap-8">
-				<p className="md:w-2/5 text-3xl font-medium ">
+			<div className="px-8 mt-8 md:flex gap-8">
+				<p className="hidden md:block md:w-2/5 text-3xl font-medium ">
 					Roneilla Bumanlag<br></br>
 					<span className="font-normal">UX Designer and Developer</span>
 				</p>

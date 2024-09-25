@@ -25,12 +25,12 @@ const WorkCard = ({
 							onMouseLeave={() => setHover(false)}>
 							<Image
 								src={imgSrc}
-								alt=""
+								alt="" // add alt texts
 								className={`bg-gray-200 md:h-72 lg:h-96 workCardImg dark:bg-black transition-transform hover:scale-110`}
 							/>
 						</div>
-						<p className="mt-4">{title}</p>
-						<p className="text-gray-600 dark:text-gray-300">{description}</p>
+						<p className="mt-4 font-medium">{title}</p>
+						<p>{description}</p>
 					</PageOutTransition>
 				</div>
 			</div>
