@@ -93,6 +93,13 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: 'PP Neue Montreal', sans-serif;
 
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 1) 80%,
+		rgba(237, 238, 255, 1) 100%
+	);
+
 	/* background: #dcddfb; */
 }
 
@@ -107,7 +114,6 @@ body {
 
 .button {
 	@apply rounded-full;
-	background-color: white;
 	border: 1px solid black;
 	color: black;
 	text-align: center;
@@ -178,7 +184,7 @@ body {
 	}
 
 	.page {
-		@apply z-10 relative bg-white dark:bg-black;
+		@apply z-10 relative;
 	}
 
 	.container {
@@ -363,12 +369,13 @@ body {
 }
 
 .viewCaseBtn {
-	color: #f2f3fd;
-	background: #41428b;
-	border-radius: 10px;
-	text-wrap: nowrap;
+	border-radius: 1000px;
 	position: fixed;
 	z-index: 999;
 	top: 0;
 	left: 0;
+	/* backdrop-filter: blur(10px);
+	text-shadow: #fff 2px 2px 7px; */
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(212, 213, 242, 0.5);
+	box-shadow: 0px 0px 7px 0px rgba(212, 213, 242, 0.5);
 }

@@ -32,8 +32,12 @@ const Home = () => {
 
 	return (
 		<PageTransition>
-			<div className="px-8">
-				<p className="md:w-1/2 text-lg mt-8">
+			<div className="px-8 mt-8 flex gap-8">
+				<p className="md:w-2/5 text-3xl font-medium ">
+					Roneilla Bumanlag<br></br>
+					<span className="font-normal">UX Designer and Developer</span>
+				</p>
+				<p className="md:w-4/6 text-lg">
 					Hi, I’m Roneilla – a UX Designer and Developer with over 4 years of
 					experience designing and building for the digital and physical space.
 					<br></br>
@@ -54,7 +58,7 @@ const Home = () => {
 				</p>
 			</div>
 			<div className="section pb-0 mt-8">
-				<p>Select works</p>
+				<p>Selected works</p>
 				<p>2020 - 2024</p>
 			</div>
 			<animated.div style={cardProps} className="relative">

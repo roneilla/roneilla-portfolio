@@ -37,7 +37,7 @@ const MouseCursor = ({ hover }: any) => {
 
 	return (
 		<animated.div
-			className={`viewCaseBtn p-2  pointer-events-none	${
+			className={`viewCaseBtn py-2 px-4  pointer-events-none no-wrap bg-white font-medium ${
 				hover ? 'inline-block' : 'hidden'
 			}`}
 			style={{
