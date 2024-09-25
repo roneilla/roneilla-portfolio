@@ -361,3 +361,14 @@ body {
 .footerMaxH {
 	height: 600px;
 }
+
+.viewCaseBtn {
+	color: #f2f3fd;
+	background: #41428b;
+	border-radius: 10px;
+	text-wrap: nowrap;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+}

@@ -27,7 +27,7 @@ const Home = () => {
 			<div className="px-8">
 				<p className="md:w-1/2 text-lg mt-8">
 					Hi, I’m Roneilla – a UX Designer and Developer with over 4 years of
-					experience designing and building for the physical and digital space.
+					experience designing and building for the digital and physical space.
 					<br></br>
 					<br></br>
 					For the past two years I’ve been at Wagepoint, leading the design
@@ -36,12 +36,17 @@ const Home = () => {
 					experience, and maintain the design system.
 					<br></br>
 					<br></br>I’m a problem-solver, builder, and a lifelong learner. After
-					hours, I’m sewing, practicing my softball swings, or building Queer
-					Club Directory.
+					hours, I’m sewing, practicing my softball swings, or building{' '}
+					<a
+						href="https://queerclubdirectory.com/"
+						className="font-medium underline"
+						target="_blank">
+						Queer Club Directory.
+					</a>
 				</p>
 			</div>
 			<div className="section pb-0 mt-8">
-				<p>Case studies</p>
+				<p>Select works</p>
 				<p>2020 - 2024</p>
 			</div>
 			<animated.div style={cardProps} className="relative">
