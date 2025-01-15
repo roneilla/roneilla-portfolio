@@ -25,9 +25,7 @@ const Home = () => {
 		[]
 	);
 
-	useEffect(() => {
-		console.log(hover);
-	}, [hover]);
+	useEffect(() => {}, [hover]);
 
 	return (
 		<PageTransition>
