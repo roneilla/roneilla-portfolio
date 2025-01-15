@@ -11,7 +11,7 @@ import ProjectHeader from '@/components/ProjectHeader';
 import ProjectFooter from '@/components/ProjectFooter';
 import ElTransition from '@/components/ElTransition';
 import CreditSection from '@/components/CreditSection';
-import { projectData } from '../data';
+import projectData from '../data';
 
 const Peanuts = () => {
 	return (
