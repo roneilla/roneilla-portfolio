@@ -48,10 +48,12 @@ const PageOutTransition = ({ link, children, className }: any) => {
 		delay: yellowD,
 		config: properties.springConfig,
 	});
-
+	return <div onClick={handleClick}>{children}</div>;
 	return (
 		<>
-			<div onClick={handleClick} className={`cursor-pointer ${className}`}>
+			<div
+				onClick={handleClick}
+				className={`cursor-pointer ${className || ''}`}>
 				{children}
 			</div>
 			<animated.div

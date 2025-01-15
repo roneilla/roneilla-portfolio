@@ -5,8 +5,6 @@ import React, { useEffect, useState } from 'react';
 import ElTransition from './ElTransition';
 import { useScroll, animated, useSpring } from 'react-spring';
 
-import FooterStar from '@/app/assets/footer-star.png';
-import Star from '@/app/assets/star.png';
 import Image from 'next/image';
 
 const Footer = () => {
@@ -49,48 +47,28 @@ const Footer = () => {
 	});
 
 	return (
-		<footer className="w-full box-border flex md:justify-center items-end text-black max-w-screen-2xl m-auto">
-			<Image
-				src={FooterStar}
-				className="hidden md:block w-full object-contain"
-				alt=""
-			/>
-			<Image
-				src={Star}
-				className="block md:hidden w-full object-contain"
-				alt=""
-			/>
-			<div className="w-full md:w-auto md:z-10 pb-4 md:pb-12 absolute">
-				<div className="px-4 text-center">
-					<p className="funFont md:hidden text-2xl mb-4 leading-6">
-						Thanks for
-						<br />
-						{`stickin'`} around!
-					</p>
-
-					<div className="flex-initial flex flex-row gap-8 justify-center">
-						<Link
-							href="https://www.linkedin.com/in/roneilla/"
-							target="_blank"
-							className="hover:underline md:text-lg">
-							LinkedIn ↗
-						</Link>
-						<Link
-							href="https://github.com/roneilla"
-							target="_blank"
-							className="hover:underline md:text-lg">
-							GitHub ↗
-						</Link>
-						<Link
-							href="mailto:roneillabumanlag@gmail.com"
-							target="_blank"
-							className="hover:underline md:text-lg">
-							Email ↗
-						</Link>
-					</div>
-					<p className="text-sm mt-1 md:mt-4">© Roneilla Bumanlag 2024</p>
-				</div>
+		<footer className="text-center p-4 font-medium">
+			<div className="flex-initial flex flex-row gap-8 justify-center">
+				<Link
+					href="https://www.linkedin.com/in/roneilla/"
+					target="_blank"
+					className="hover:underline md:text-lg">
+					LinkedIn ↗
+				</Link>
+				<Link
+					href="https://github.com/roneilla"
+					target="_blank"
+					className="hover:underline md:text-lg">
+					GitHub ↗
+				</Link>
+				<Link
+					href="mailto:roneillabumanlag@gmail.com"
+					target="_blank"
+					className="hover:underline md:text-lg">
+					Email ↗
+				</Link>
 			</div>
+			<p className="text-sm mt-1 md:mt-4">© Roneilla Bumanlag 2025</p>
 		</footer>
 	);
 };

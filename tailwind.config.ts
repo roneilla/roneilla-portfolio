@@ -17,8 +17,17 @@ const config: Config = {
 		borderRadius: {
 			none: '0',
 			DEFAULT: '10px',
-			lg: '24px',
+			lg: '20px',
 			full: '9999px',
+		},
+		colors: {
+			black: '#242424',
+			white: '#FAFAFA',
+			gray: {
+				100: '#f5f5f5',
+				200: '#ececec',
+				600: '#4b4b4b',
+			},
 		},
 	},
 	plugins: [],

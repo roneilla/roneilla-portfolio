@@ -31,6 +31,8 @@ const PageTransition = ({ children }: any) => {
 		}),
 		[]
 	);
+
+	return children;
 	return (
 		<>
 			<animated.div

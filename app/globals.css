@@ -84,7 +84,7 @@ img {
 }
 
 .svgLogo {
-	@apply fill-black dark:fill-white;
+	@apply fill-black;
 }
 
 body {
@@ -93,14 +93,19 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: 'PP Neue Montreal', sans-serif;
 
-	background: rgb(255, 255, 255);
+	/* background: rgb(255, 255, 255);
 	background: linear-gradient(
 		0deg,
 		rgba(255, 255, 255, 1) 80%,
 		rgba(237, 238, 255, 1) 100%
-	);
+	); */
 
-	/* background: #dcddfb; */
+	background: #fafafa;
+}
+
+.body {
+	max-width: 1200px;
+	margin: auto;
 }
 
 ::selection {
@@ -194,10 +199,6 @@ body {
 	.section {
 		@apply w-full px-8 md:px-8 py-8;
 	}
-
-	.body {
-		@apply text-black dark:text-white;
-	}
 }
 
 .workCard {
@@ -208,7 +209,6 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	transition: all 0.1s ease-in-sine;
-	object-fit: cover;
 }
 
 .workCardImg:hover {
@@ -321,7 +321,7 @@ body {
 }
 
 .blueCard {
-	@apply px-6 py-8 bg-slate-100 rounded-lg flex-1;
+	@apply px-6 py-8 bg-gray-100 rounded-lg flex-1;
 }
 
 .greyBtn {

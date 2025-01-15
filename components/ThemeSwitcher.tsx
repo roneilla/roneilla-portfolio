@@ -47,7 +47,7 @@ const ThemeSwitcher = () => {
 	return (
 		<button
 			onClick={setNewTheme}
-			className="hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full w-8 h-8 p-1">
+			className="hover:bg-gray-100 dark:hover:bg-black rounded-full w-8 h-8 p-1">
 			<animated.svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"

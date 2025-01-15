@@ -6,6 +6,7 @@ import ThemeSwitcher from './ThemeSwitcher';
 import { usePathname, useRouter } from 'next/navigation';
 import { useSpring, animated } from 'react-spring';
 import Logo from './Logo';
+import Link from 'next/link';
 
 const Nav = () => {
 	const pathname = usePathname();
@@ -59,11 +60,14 @@ const Nav = () => {
 		config: properties.springConfig,
 	});
 
+	const linkStyle = 'px-2 py-2/3 rounded-full hover:bg-gray-200';
+	const currentLink = 'bg-gray-200';
+
 	return (
 		<>
-			<animated.div className={` z-20 `}>
-				<div className="container px-8 pt-4 flex gap-4 items-center">
-					{pathname != '/' ? (
+			<animated.div className={`z-20 fixed top-0 left-0 w-full`}>
+				<div className="px-8 pt-4 flex justify-center gap-4 items-center">
+					{/* {pathname != '/' ? (
 						<Button
 							withArrow={true}
 							handleClick={(e: any) => handleClick({ e, link: '/' })}>
@@ -73,11 +77,22 @@ const Nav = () => {
 						<div onClick={(e) => handleClick({ e, link: '/' })}>
 							<h1 className="font-medium">Roneilla Bumanlag</h1>
 						</div>
-					)}
+					)} */}
 
-					<div className="flex-1 flex items-center justify-end gap-4">
-						{/* <ThemeSwitcher /> */}
-						{/* <Button>Contact me</Button> */}
+					<div className="font-medium bg-white gap-4 px-3 py-2 flex rounded-full border border-gray-200 shadow-sm">
+						{/* TODO: implement moving indicator between tabs */}
+						<Link
+							href="/"
+							className={`${linkStyle} ${pathname === '/' ? currentLink : ''}`}>
+							Work
+						</Link>
+						<Link
+							href="/archive"
+							className={`${linkStyle} ${
+								pathname === '/archive' ? currentLink : ''
+							}`}>
+							Archive
+						</Link>
 					</div>
 				</div>
 			</animated.div>

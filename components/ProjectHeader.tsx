@@ -8,7 +8,7 @@ import projectData from '@/app/data';
 const ProjectHeader = () => {
 	const pathname = usePathname();
 
-	const index = projectData.findIndex((data) => data.link === pathname);
+	const index = projectData.findIndex((data: any) => data.link === pathname);
 
 	return (
 		<div className="sm:mt-8 pb-8 text-center">

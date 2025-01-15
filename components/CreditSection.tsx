@@ -28,7 +28,7 @@ const CreditSection = ({
 				<div className="flex flex-col md:flex-row gap-8 md:gap-16">
 					<div className="flex-initial">
 						<p className="font-medium">{firstCol.title}</p>
-						<p className="text-gray-600 dark:text-gray-300">{firstCol.body}</p>
+						<p className="text-black dark:text-gray-200">{firstCol.body}</p>
 						{link && (
 							<div className="mt-4 hover:underline">
 								<a href={link} target="_blank">
@@ -40,17 +40,13 @@ const CreditSection = ({
 					{secondCol && (
 						<div>
 							<p className="font-medium">{secondCol.title}</p>
-							<p className="text-gray-600 dark:text-gray-300">
-								{secondCol.body}
-							</p>
+							<p className="text-black dark:text-gray-200">{secondCol.body}</p>
 						</div>
 					)}
 					{thirdCol && (
 						<div>
 							<p className="font-medium">{thirdCol.title}</p>
-							<p className="text-gray-600 dark:text-gray-300">
-								{thirdCol.body}
-							</p>
+							<p className="text-black dark:text-gray-200">{thirdCol.body}</p>
 						</div>
 					)}
 				</div>

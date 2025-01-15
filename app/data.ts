@@ -6,8 +6,19 @@ import Qcdt from '@/app/assets/qcdt-thumbnail.png';
 import Freshii from '@/app/assets/freshii-thumbnail.png';
 import Wpds from '@/app/assets/wpds-thumbail.png';
 import AlfredSearch from '@/app/assets/alfredsearch-thumbail.png';
+import Verification from '@/app/assets/verification-thumbnail.png';
 
 const projectData = [
+	// {
+	// 	id: 'wp-verification',
+	// 	title: `Increase plaid usage`,
+	// 	link: '/wagepoint-verification',
+	// 	description:
+	// 		'Improving adoption and time-to-first-payroll by empowering users to select Instant verification',
+	// 	image: Verification,
+	// 	role: 'UX Designer',
+	// 	size: 'w-full md:w-4/6',
+	// },
 	{
 		id: 'wp-alfredsearch',
 		title: `Wagepoint Global Search`,
@@ -16,6 +27,18 @@ const projectData = [
 		image: AlfredSearch,
 		role: 'UX Designer & Developer',
 		size: 'w-full md:w-4/6',
+		category: 'selectedWork',
+	},
+	{
+		id: 'wp-ds',
+		title: `Wagepoint Design System`,
+		link: '/wagepoint-design-system',
+		description:
+			'Elevating and optimizing a design system for a efficiency and growth',
+		image: Wpds,
+		role: 'UX Designer & Developer',
+		size: 'w-full md:w-2/6',
+		category: 'selectedWork',
 	},
 	{
 		id: 'qcdt',
@@ -26,6 +49,7 @@ const projectData = [
 		image: Qcdt,
 		role: 'Interaction Designer & Developer',
 		size: 'w-full md:w-2/6',
+		category: 'selectedWork',
 	},
 	{
 		id: 'tpol',
@@ -36,16 +60,7 @@ const projectData = [
 		image: Tpol,
 		role: 'Interaction Designer & Developer',
 		size: 'w-full md:w-4/6',
-	},
-	{
-		id: 'wp-ds',
-		title: `Wagepoint Design System`,
-		link: '/wagepoint-design-system',
-		description:
-			'Creating a scalable design system for a multi-product company',
-		image: Wpds,
-		role: 'UX Designer & Developer',
-		size: 'w-full md:w-2/6',
+		category: 'archive',
 	},
 	{
 		id: 'schroeder',
@@ -56,6 +71,7 @@ const projectData = [
 		image: Peanuts,
 		role: 'Interaction Designer & Developer',
 		size: 'w-full md:w-1/2',
+		category: 'archive',
 	},
 	{
 		id: 'tippt',
@@ -66,6 +82,7 @@ const projectData = [
 		image: Tippt,
 		role: 'UX Designer',
 		size: 'w-full md:w-1/2',
+		category: 'archive',
 	},
 	{
 		id: 'splinterD',
@@ -76,6 +93,7 @@ const projectData = [
 		image: Sd,
 		role: 'Interaction Designer & Developer',
 		size: 'w-full md:w-4/6',
+		category: 'archive',
 	},
 	{
 		id: 'freshii',
@@ -84,6 +102,7 @@ const projectData = [
 		description: `An Instagram filter of a mushroom haircut to promote Freshii’s Super Mushroom gummies`,
 		image: Freshii,
 		size: 'w-full md:w-2/6',
+		category: 'archive',
 	},
 	// {
 	// 	id: '',

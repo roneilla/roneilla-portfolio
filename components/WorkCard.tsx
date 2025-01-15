@@ -16,21 +16,23 @@ const WorkCard = ({
 }: any) => {
 	return (
 		<>
-			<div className={size}>
-				<div id={`tb-${id}`} className="w-full p-6 cursor-pointer">
+			<div className={`w-full text-black h-full`}>
+				<div
+					id={`tb-${id}`}
+					className="h-full w-full p-6 cursor-pointer bg-gray-100 rounded-lg">
 					<PageOutTransition link={link}>
+						<p className="font-medium text-2xl mb-2">{title}</p>
+						<p className="text-gray-600">{description}</p>
 						<div
-							className="overflow-hidden rounded"
+							className="overflow-hidden  mt-6"
 							onMouseEnter={() => setHover(true)}
 							onMouseLeave={() => setHover(false)}>
 							<Image
 								src={imgSrc}
 								alt="" // add alt texts
-								className={`bg-gray-200 md:h-72 lg:h-96 workCardImg dark:bg-black transition-transform hover:scale-110`}
+								className={`rounded-lg object-contain max-h-96 workCardImg dark:bg-black transition-transform hover:scale-90`}
 							/>
 						</div>
-						<p className="mt-4 font-medium">{title}</p>
-						<p>{description}</p>
 					</PageOutTransition>
 				</div>
 			</div>

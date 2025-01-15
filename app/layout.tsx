@@ -18,16 +18,18 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`body`}>
-				<Loader />
+			<body>
+				<div className="body text-zinc-800 font-medium">
+					<Loader />
 
-				<Nav />
+					<Nav />
 
-				<div className="page">
-					<div className="container">{children}</div>
+					<div className="page mt-20">
+						<div className="container ">{children}</div>
+					</div>
+					<Footer />
+					<Analytics />
 				</div>
-				<Footer />
-				<Analytics />
 			</body>
 		</html>
 	);

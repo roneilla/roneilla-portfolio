@@ -78,7 +78,7 @@ const AlfredSearch = () => {
 						email is [generic]. It’s a daily occurrence. It’s{' '}
 						<i>very very frustrating.</i>”
 					</p>
-					<p className="text-gray-700 mt-2">Customer support specialist</p>
+					<p className="text-black mt-2">Customer support specialist</p>
 				</div>
 
 				<div className="mt-24">
@@ -97,7 +97,7 @@ const AlfredSearch = () => {
 					<div className="flex space-between gap-4 mt-8 flex-col md:flex-row">
 						<div className="flex-1">
 							<p className="font-medium">Hidden access</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								The search functions were nested in two different pages, one for
 								clients and one for partners.
 							</p>
@@ -105,7 +105,7 @@ const AlfredSearch = () => {
 						</div>
 						<div className="flex-1">
 							<p className="font-medium">Lack of system status</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								The search function simply filtered the table. The search
 								results did not display what information matches the search
 								criteria.
@@ -114,7 +114,7 @@ const AlfredSearch = () => {
 						</div>
 						<div className="flex-1">
 							<p className="font-medium">Inflexibility</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								The search criteria was lacking. Agents couldn’t quickly find
 								what they needed with the information they had.
 							</p>
@@ -143,28 +143,28 @@ const AlfredSearch = () => {
 					<div className="flex space-between gap-4 mt-8 flex-col md:flex-row">
 						<div className="blueCard">
 							<p>Identify account type</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								“It would be good to be able to enter a name and find out if
 								they’re a client or partner”
 							</p>
 						</div>
 						<div className="blueCard">
 							<p>Expand search criteria</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								Agents requested to include more information for the search
 								criteria (i.e email, phone number, DBA, company ID).
 							</p>
 						</div>
 						<div className="blueCard">
 							<p>Include closed/archived accounts</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								“Sometimes users will reach out because they aren’t able to get
 								in, they don’t realize they were archived (employees)”
 							</p>
 						</div>
 						<div className="blueCard">
 							<p>Display the account’s roles</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								“In 1.0, we searched by email address a lot. Now we have to ask
 								for their company, we don’t have anything to identify them
 								with.”
@@ -178,7 +178,7 @@ const AlfredSearch = () => {
 						“Getting the insight before you potentially reach back out to a
 						client, it just makes you feel a little <i>more empowered</i>.”
 					</p>
-					<p className="text-gray-700 mt-2">Customer support specialist</p>
+					<p className="text-black mt-2">Customer support specialist</p>
 				</div>
 
 				<div className="mt-24">
@@ -213,7 +213,7 @@ const AlfredSearch = () => {
 						<div>
 							<p className="monoFont">Needs improvement</p>
 							<p className="text-xl my-4">The two columns were confusing</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								“My eye is drawn to the first column”
 								<br />
 								“My instinct is to look on the left for my results”
@@ -230,7 +230,7 @@ const AlfredSearch = () => {
 						<div className="flex-1 bg-gray-100 p-8 rounded">
 							<p className="monoFont">Needs improvement</p>
 							<p className="text-xl my-4">They wanted more ease-of-use</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								Two users requested small changes that lessen the friction.
 								<br />
 								“Automatically select input field on open. small change that
@@ -247,7 +247,7 @@ const AlfredSearch = () => {
 							<p className="text-xl my-4">
 								People loved seeing the type of account tooltip/icon
 							</p>
-							<p className="text-gray-600">
+							<p className="text-black">
 								They can now see the company type without having to go into the
 								account. Because the icons are different, they can also start to
 								learn what each mean. Eventually they might not need to hover.
