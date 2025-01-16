@@ -25,7 +25,7 @@ const Qcdt = () => {
 				<div className="mt-12">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">Opportunity</h2>
+							<h2 className="mb-4">Opportunity</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>

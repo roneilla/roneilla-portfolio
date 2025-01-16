@@ -103,8 +103,8 @@ body {
 	background: #fafafa;
 }
 
-.body {
-	max-width: 1200px;
+.section {
+	max-width: 1264px;
 	margin: auto;
 }
 
@@ -158,10 +158,6 @@ body {
 	left: 8px;
 }
 
-.displayFont {
-	/* font-family: 'PP Right Serif', sans-serif; */
-}
-
 .monoFont {
 	font-family: 'PP Neue Montreal Mono', monospace;
 	@apply uppercase;
@@ -172,16 +168,16 @@ body {
 }
 
 @layer components {
-	.h1 {
-		@apply text-3xl font-normal;
+	h1 {
+		@apply text-4xl font-normal;
 	}
 
-	.h2 {
+	h2 {
+		@apply text-3xl;
+	}
+
+	h3 {
 		@apply text-2xl;
-	}
-
-	.h3 {
-		@apply text-xl;
 	}
 
 	.navlink {
@@ -189,11 +185,11 @@ body {
 	}
 
 	.page {
-		@apply z-10 relative;
+		@apply relative;
 	}
 
 	.container {
-		@apply max-w-screen-xl mx-auto pb-1;
+		@apply pb-1;
 	}
 
 	.section {
@@ -378,4 +374,8 @@ body {
 	text-shadow: #fff 2px 2px 7px; */
 	-webkit-box-shadow: 0px 0px 7px 0px rgba(212, 213, 242, 0.5);
 	box-shadow: 0px 0px 7px 0px rgba(212, 213, 242, 0.5);
+}
+
+.tagItem {
+	@apply text-sm bg-gray-200 rounded px-2 py-1;
 }

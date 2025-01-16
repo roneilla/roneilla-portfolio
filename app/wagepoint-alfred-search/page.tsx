@@ -32,7 +32,7 @@ const AlfredSearch = () => {
 							<p className="monoFont mb-4 text-sm">The problem</p>
 						</ElTransition>
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">
+							<h2 className="mb-4">
 								Internal support ticket times are increasing.
 							</h2>
 						</ElTransition>
@@ -83,7 +83,7 @@ const AlfredSearch = () => {
 
 				<div className="mt-24">
 					<ElTransition>
-						<h3 className="h2 displayFont mb-4 text-center">
+						<h3 className="mb-4 text-center">
 							The current experience and its issues
 						</h3>
 					</ElTransition>
@@ -129,7 +129,7 @@ const AlfredSearch = () => {
 							<p className="monoFont mb-4 text-sm">Listening to our users</p>
 						</ElTransition>
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">Requirements</h2>
+							<h2 className="mb-4">Requirements</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>
@@ -183,7 +183,7 @@ const AlfredSearch = () => {
 
 				<div className="mt-24">
 					<ElTransition>
-						<h2 className="h2 displayFont mb-4">
+						<h2 className="mb-4">
 							We tested for the most common and most critical use cases
 						</h2>
 					</ElTransition>
@@ -204,9 +204,7 @@ const AlfredSearch = () => {
 
 				<div className="mt-24">
 					<ElTransition>
-						<h3 className="h2 displayFont mb-4 text-center">
-							We asked agents for feedback.
-						</h3>
+						<h3 className="mb-4 text-center">We asked agents for feedback.</h3>
 					</ElTransition>
 
 					<div className="bg-gray-100 p-8 rounded flex gap-8 flex-col md:flex-row">
@@ -319,7 +317,7 @@ const AlfredSearch = () => {
 				<div className="mt-24">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">Flexible search display</h2>
+							<h2 className="mb-4">Flexible search display</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>
@@ -337,7 +335,7 @@ const AlfredSearch = () => {
 				<div className="mt-24">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">More context, less clicks</h2>
+							<h2 className="mb-4">More context, less clicks</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>

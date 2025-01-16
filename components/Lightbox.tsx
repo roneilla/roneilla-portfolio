@@ -14,6 +14,7 @@ const Lightbox = ({
 	background,
 	header,
 	maxHeight,
+	textColor,
 }: any) => {
 	const [open, setOpen] = useState(false);
 	const ref = useRef<any>(null);
@@ -112,7 +113,7 @@ const Lightbox = ({
 				<Image
 					src={imgSrc}
 					alt={altText}
-					className={`cursor-pointer z-40 lightboxImg`}
+					className={`cursor-pointer z-30 lightboxImg`}
 					ref={ref}
 				/>
 			</animated.div>
@@ -127,7 +128,7 @@ const Lightbox = ({
 				<DisplayImage />
 			)}
 
-			{/* <p className="text-white text-center mt-4">{description}</p> */}
+			<p className={`${textColor} text-center mt-2 text-sm`}>{description}</p>
 		</>
 	);
 };

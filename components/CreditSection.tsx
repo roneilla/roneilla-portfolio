@@ -24,7 +24,7 @@ const CreditSection = ({
 	return (
 		<div className="mt-20">
 			<ElTransition>
-				<h2 className="h2 displayFont mb-4">{title}</h2>
+				<h2 className="mb-4">{title}</h2>
 				<div className="flex flex-col md:flex-row gap-8 md:gap-16">
 					<div className="flex-initial">
 						<p className="font-medium">{firstCol.title}</p>

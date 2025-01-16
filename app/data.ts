@@ -20,6 +20,18 @@ const projectData = [
 	// 	size: 'w-full md:w-4/6',
 	// },
 	{
+		id: 'wp-ds',
+		title: `Wagepoint Design System`,
+		link: '/wagepoint-design-system',
+		description:
+			'Elevating and optimizing a design system for efficiency and growth',
+		image: Wpds,
+		role: 'UX Designer & Developer',
+		size: 'w-full md:w-2/6',
+		tags: ['Design system', 'UX development'],
+		category: 'selectedWork',
+	},
+	{
 		id: 'wp-alfredsearch',
 		title: `Wagepoint Global Search`,
 		link: '/wagepoint-alfred-search',
@@ -27,17 +39,6 @@ const projectData = [
 		image: AlfredSearch,
 		role: 'UX Designer & Developer',
 		size: 'w-full md:w-4/6',
-		category: 'selectedWork',
-	},
-	{
-		id: 'wp-ds',
-		title: `Wagepoint Design System`,
-		link: '/wagepoint-design-system',
-		description:
-			'Elevating and optimizing a design system for a efficiency and growth',
-		image: Wpds,
-		role: 'UX Designer & Developer',
-		size: 'w-full md:w-2/6',
 		category: 'selectedWork',
 	},
 	{

@@ -19,14 +19,12 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<div className="body text-zinc-800 font-medium">
+				<div className="text-zinc-800 font-medium">
 					<Loader />
 
 					<Nav />
 
-					<div className="page mt-20">
-						<div className="container ">{children}</div>
-					</div>
+					<div className="page mt-20">{children}</div>
 					<Footer />
 					<Analytics />
 				</div>

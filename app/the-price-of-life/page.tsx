@@ -29,7 +29,7 @@ const Tpol = () => {
 				<div className="mt-12">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">{`Board game`}</h2>
+							<h2 className="mb-4">{`Board game`}</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>
@@ -69,7 +69,7 @@ const Tpol = () => {
 				<div className="mt-12">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">{`Gamemaster's dashboard`}</h2>
+							<h2 className="mb-4">{`Gamemaster's dashboard`}</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>
@@ -96,7 +96,7 @@ const Tpol = () => {
 				<div className="mt-12">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">{`Player's dashboard`}</h2>
+							<h2 className="mb-4">{`Player's dashboard`}</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>

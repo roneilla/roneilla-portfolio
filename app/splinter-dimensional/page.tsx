@@ -44,7 +44,7 @@ const SdAr = () => {
 				<div className="mt-12">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">Introduction & training</h2>
+							<h2 className="mb-4">Introduction & training</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>
@@ -79,7 +79,7 @@ const SdAr = () => {
 				<div className="mt-12">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">Scavenger hunt finds!</h2>
+							<h2 className="mb-4">Scavenger hunt finds!</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>
@@ -108,7 +108,7 @@ const SdAr = () => {
 				<div className="mt-12">
 					<div className="sm:w-1/2">
 						<ElTransition>
-							<h2 className="h2 displayFont mb-4">Thanks and Next Steps</h2>
+							<h2 className="mb-4">Thanks and Next Steps</h2>
 						</ElTransition>
 						<ElTransition>
 							<p>
