@@ -47,7 +47,7 @@ const Footer = () => {
 	});
 
 	return (
-		<footer className="text-center p-4 font-medium">
+		<footer className="text-center px-4 py-8 font-medium">
 			<div className="flex-initial flex flex-row gap-8 justify-center">
 				<Link
 					href="https://www.linkedin.com/in/roneilla/"
@@ -68,7 +68,9 @@ const Footer = () => {
 					Email ↗
 				</Link>
 			</div>
-			<p className="text-sm mt-1 md:mt-4">© Roneilla Bumanlag 2025</p>
+			<p className="text-sm mt-1 md:mt-4">
+				Designed and built by Roneilla Bumanlag © 2025
+			</p>
 		</footer>
 	);
 };
