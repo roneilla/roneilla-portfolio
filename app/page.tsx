@@ -39,8 +39,8 @@ const Home = () => {
 				<div className="pt-36 pb-12 flex flex-col-reverse md:flex-row justify-between md:items-end">
 					<p className="mt-2 md:mt-0">2022 - 2025</p>
 					<p className="md:w-1/3">
-						Specializing in design systems, front-end development, product
-						strategy, and web accessibility
+						Specializing in design systems, front-end development, and web
+						accessibility
 					</p>
 				</div>
 				<animated.div style={cardProps} className="relative">
