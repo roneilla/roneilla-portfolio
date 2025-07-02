@@ -55,7 +55,7 @@ const Qcdt = () => {
 						title: 'Year',
 						body: '2024',
 					}}
-					link="https://queerclubdirectory.com/"
+					link="https://queerclubdirectory.netlify.app/"
 				/>
 			</div>
 			<ProjectFooter />
