@@ -46,17 +46,16 @@ const PageOutTransition = ({ link, children, className }: any) => {
 		springConfig: { tension: 250, friction: 35 },
 	};
 
-	const { top, redD, blueD, yellowD, display } = properties[loading ? 'end' : 'start'];
+	const { top, redD, blueD, yellowD } = properties[loading ? 'end' : 'start'];
 
-	const red = useSpring({ top, display, delay: redD, config: properties.springConfig });
+	const red = useSpring({ top, delay: redD, config: properties.springConfig });
 	const blue = useSpring({
-		top, display,
+		top,
 		delay: blueD,
 		config: properties.springConfig,
 	});
 	const yellow = useSpring({
 		top,
-		display,
 		delay: yellowD,
 		config: properties.springConfig,
 	});
