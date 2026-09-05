@@ -4,9 +4,10 @@ import Sd from '@/app/assets/sd-thumbnail.png';
 import Tpol from '@/app/assets/tpol-thumbnail.png';
 import Qcdt from '@/app/assets/qcdt-thumbnail.png';
 import Freshii from '@/app/assets/freshii-thumbnail.png';
-import Wpds from '@/app/assets/wpds-thumbail.png';
-import AlfredSearch from '@/app/assets/alfredsearch-thumbail.png';
+import Wpds from '@/app/assets/wpds-thumbnail.png';
+import AlfredSearch from '@/app/assets/alfredsearch-thumbnail.png';
 import Verification from '@/app/assets/verification-thumbnail.png';
+import WPAISummary from '@/app/assets/wpaisummary-thumbnail.png';
 
 const projectData = [
 	// {
@@ -20,25 +21,39 @@ const projectData = [
 	// 	size: 'w-full md:w-4/6',
 	// },
 	{
+		preview: true,
+		id: 'wp-aisummary',
+		title: `AI Payroll Summary`,
+		link: '/wagepoint-ai-summary',
+		description:
+			'Designed the product’s first AI feature to help admins catch anomalies and turn payroll data into actionable insights.',
+		image: WPAISummary,
+		role: 'UX Designer & Developer',
+		size: 'w-full md:w-2/6',
+		tags: ['UX Design', 'AI'],
+		category: 'selectedWork',
+	},
+	{
 		id: 'wp-ds',
-		title: `Wagepoint Design System`,
+		title: `Vault Design System`,
 		link: '/wagepoint-design-system',
 		description:
-			'Elevating and optimizing a design system for efficiency and growth',
+			'Evolving our design system across Figma and Storybook. Designed components, shipped code, and improved team practices.',
 		image: Wpds,
 		role: 'UX Designer & Developer',
 		size: 'w-full md:w-2/6',
-		tags: ['Design system', 'UX development'],
+		tags: ['Design system', 'UX Development'],
 		category: 'selectedWork',
 	},
 	{
 		id: 'wp-alfredsearch',
-		title: `Wagepoint Global Search`,
+		title: `Alfred Global Search`,
 		link: '/wagepoint-alfred-search',
-		description: 'Improving the search function for internal support agents',
+		description: 'Improving global search to help internal support agents find the information they need faster.',
 		image: AlfredSearch,
 		role: 'UX Designer & Developer',
 		size: 'w-full md:w-4/6',
+		tags: ['UX Design', 'Internal tools'],
 		category: 'selectedWork',
 	},
 	{
@@ -46,9 +61,10 @@ const projectData = [
 		title: 'Queer Club Directory Toronto',
 		link: '/queer-club-directory',
 		description:
-			'A directory to help queer folx in Toronto find clubs or groups by interest',
+			'Making queer communities more discoverable through a centralized, easy-to-navigate directory.',
 		image: Qcdt,
 		role: 'Interaction Designer & Developer',
+		tags: ['UX Design', 'Front-end Development'],
 		size: 'w-full md:w-2/6',
 		category: 'selectedWork',
 	},

@@ -25,7 +25,11 @@ const AlfredSearch = () => {
 				<div className="mt-8 max-w-4xl mx-auto">
 					<Lightbox imgSrc={Header} header={true} />
 				</div>
+			</div>
 
+			{/* TODO: add overview + impact */}
+
+			<div className="section">
 				<div className="mt-24">
 					<div className="md:w-1/2">
 						<ElTransition>
@@ -71,16 +75,18 @@ const AlfredSearch = () => {
 						</div>
 					</div>
 				</div>
-
-				<div className="mt-24 py-24 text-center">
+			</div>
+			<div className="section">
+				<div className="mt-24 text-center alfred-big-quote">
 					<p className="text-2xl md:px-12">
 						“Some customers don’t tell us who they are in the ticket and their
 						email is [generic]. It’s a daily occurrence. It’s{' '}
 						<i>very very frustrating.</i>”
 					</p>
-					<p className="text-black mt-2">Customer support specialist</p>
+					<p className="text-gray-600 mt-2">– Product support specialist</p>
 				</div>
-
+			</div>
+			<div className="section">
 				<div className="mt-24">
 					<ElTransition>
 						<h3 className="mb-4 text-center">
@@ -140,31 +146,31 @@ const AlfredSearch = () => {
 							</p>
 						</ElTransition>
 					</div>
-					<div className="flex space-between gap-4 mt-8 flex-col md:flex-row">
+					<div className="grid md:grid-cols-2 space-between gap-4 mt-8">
 						<div className="blueCard">
-							<p>Identify account type</p>
-							<p className="text-black">
+							<p className="font-semibold mb-2">Identify account type</p>
+							<p>
 								“It would be good to be able to enter a name and find out if
 								they’re a client or partner”
 							</p>
 						</div>
 						<div className="blueCard">
-							<p>Expand search criteria</p>
-							<p className="text-black">
+							<p className="font-semibold mb-2">Expand search criteria</p>
+							<p>
 								Agents requested to include more information for the search
 								criteria (i.e email, phone number, DBA, company ID).
 							</p>
 						</div>
 						<div className="blueCard">
-							<p>Include closed/archived accounts</p>
-							<p className="text-black">
+							<p className="font-semibold mb-2">Include closed/archived accounts</p>
+							<p>
 								“Sometimes users will reach out because they aren’t able to get
 								in, they don’t realize they were archived (employees)”
 							</p>
 						</div>
 						<div className="blueCard">
-							<p>Display the account’s roles</p>
-							<p className="text-black">
+							<p className="font-semibold mb-2">Display the account’s roles</p>
+							<p>
 								“In 1.0, we searched by email address a lot. Now we have to ask
 								for their company, we don’t have anything to identify them
 								with.”
@@ -172,184 +178,209 @@ const AlfredSearch = () => {
 						</div>
 					</div>
 				</div>
-
-				<div className="mt-24 py-24 text-center">
+			</div>
+			<div className="section">
+				<div className="mt-24 text-center alfred-big-quote mb-24">
 					<p className="text-2xl md:px-12">
 						“Getting the insight before you potentially reach back out to a
 						client, it just makes you feel a little <i>more empowered</i>.”
 					</p>
-					<p className="text-black mt-2">Customer support specialist</p>
+					<p className="text-gray-600 mt-2">– Product support specialist</p>
 				</div>
-
-				<div className="mt-24">
-					<ElTransition>
-						<h2 className="mb-4">
-							We tested for the most common and most critical use cases
-						</h2>
-					</ElTransition>
-					<ElTransition>
-						<p className="w-1/2">
-							The most common search terms were admin name, email, or company
-							name. So we tested use cases based on multiple matching results
-							from the search criteria.
-						</p>
-					</ElTransition>
-				</div>
-
-				<div className="mt-8">
-					<div className="imgMax900">
-						<Lightbox imgSrc={TestScreenshot} header={true} />
-					</div>
-				</div>
-
-				<div className="mt-24">
-					<ElTransition>
-						<h3 className="mb-4 text-center">We asked agents for feedback.</h3>
-					</ElTransition>
-
-					<div className="bg-gray-100 p-8 rounded flex gap-8 flex-col md:flex-row">
-						<div>
-							<p className="monoFont">Needs improvement</p>
-							<p className="text-xl my-4">The two columns were confusing</p>
-							<p className="text-black">
-								“My eye is drawn to the first column”
-								<br />
-								“My instinct is to look on the left for my results”
-								<br />
-								“I’m a little confused... Is the left company name and the right
-								admins?”
+			</div>
+			<div className="bg-gray-200 pb-24">
+				<div className="section">
+					<div className="mt-24">
+						<ElTransition>
+							<h2 className="mb-4">
+								We tested for the most common and most critical use cases
+							</h2>
+						</ElTransition>
+						<ElTransition>
+							<p className="w-1/2">
+								The most common search terms were admin name, email, or company
+								name. So we tested use cases based on multiple matching results
+								from the search criteria.
 							</p>
-						</div>
-
-						<Lightbox imgSrc={TwoColEx} header={true} />
+						</ElTransition>
 					</div>
 
-					<div className="flex gap-4 mt-4 flex-col md:flex-row">
-						<div className="flex-1 bg-gray-100 p-8 rounded">
-							<p className="monoFont">Needs improvement</p>
-							<p className="text-xl my-4">They wanted more ease-of-use</p>
-							<p className="text-black">
-								Two users requested small changes that lessen the friction.
-								<br />
-								“Automatically select input field on open. small change that
-								saves lots of time overall”
-								<br />
-								“If I go into the page and it’s not the right one, I’d like to
-								go back into the search and not have to plug in information
-								again”
-							</p>
-						</div>
-
-						<div className="flex-1 bg-gray-100 p-8 rounded">
-							<p className="monoFont">Liked</p>
-							<p className="text-xl my-4">
-								People loved seeing the type of account tooltip/icon
-							</p>
-							<p className="text-black">
-								They can now see the company type without having to go into the
-								account. Because the icons are different, they can also start to
-								learn what each mean. Eventually they might not need to hover.
-								<br />
-								“This is so helpful, the partner team often say, ‘I want to know
-								if this company is tied to a partner account or not’ ”
-							</p>
+					<div className="mt-8">
+						<div className="imgMax900">
+							<Lightbox imgSrc={TestScreenshot} header={true} />
 						</div>
 					</div>
-				</div>
 
-				<div className="mt-4">
-					<div className="p-8 rounded bg-yellow-50 flex gap-4">
-						<div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								width={24}
-								height={24}
-								viewBox="0 0 24 24"
-								strokeWidth={1.5}
-								stroke="currentColor">
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
-								/>
-							</svg>
+					<div className="mt-24">
+						<ElTransition>
+							<h3 className="mb-4 text-center">We asked agents for feedback.</h3>
+						</ElTransition>
+
+						<div className="bg-white p-8 rounded flex gap-8 flex-col md:flex-row">
+							<div>
+								<div className="flex gap-4">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4">
+										<path d="M2.75 2a.75.75 0 0 0-.75.75v10.5a.75.75 0 0 0 1.5 0v-2.624l.33-.083A6.044 6.044 0 0 1 8 11c1.29.645 2.77.807 4.17.457l1.48-.37a.462.462 0 0 0 .35-.448V3.56a.438.438 0 0 0-.544-.425l-1.287.322C10.77 3.808 9.291 3.646 8 3a6.045 6.045 0 0 0-4.17-.457l-.34.085A.75.75 0 0 0 2.75 2Z" />
+									</svg>
+									<p className="monoFont">Needs improvement</p>
+								</div>
+								<p className="text-xl my-4 font-medium">The two-column layout was confusing</p>
+								<div className="flex flex-col gap-6">
+									<p className="alfred-quote">
+										“My eye is drawn to the first column”
+									</p>
+									<p className="alfred-quote">
+										“My instinct is to look on the left for my results”
+									</p>
+									<p className="alfred-quote">
+										“I’m a little confused... Is the left company name and the right
+										admins?”
+									</p>
+								</div>
+							</div>
+
+							<Lightbox imgSrc={TwoColEx} header={true} />
 						</div>
 
-						<div>
-							<p className="font-medium">
+						<div className="flex gap-4 mt-4 flex-col md:flex-row">
+							<div className="flex-1 bg-white p-8 rounded">
+								<div className="flex gap-4">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4">
+										<path d="M2.75 2a.75.75 0 0 0-.75.75v10.5a.75.75 0 0 0 1.5 0v-2.624l.33-.083A6.044 6.044 0 0 1 8 11c1.29.645 2.77.807 4.17.457l1.48-.37a.462.462 0 0 0 .35-.448V3.56a.438.438 0 0 0-.544-.425l-1.287.322C10.77 3.808 9.291 3.646 8 3a6.045 6.045 0 0 0-4.17-.457l-.34.085A.75.75 0 0 0 2.75 2Z" />
+									</svg>
+									<p className="monoFont">Needs improvement</p>
+								</div>
+
+								<p className="text-xl my-4 font-medium">They wanted more ease-of-use</p>
+								<div className="flex flex-col gap-6">
+									<p>
+										Two users requested small changes that lessen the friction.
+									</p>
+									<p className="alfred-quote">
+										“[It would be nice if it] automatically select input field on open. Small change that
+										saves lots of time overall”
+									</p>
+									<p className="alfred-quote">
+										“If I go into the page and it’s not the right one, I’d like to
+										go back into the search and not have to plug in information
+										again”
+									</p>
+								</div>
+							</div>
+
+							<div className="flex-1 bg-white p-8 rounded">
+								<div className="flex gap-4">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4">
+										<path d="M2.09 15a1 1 0 0 0 1-1V8a1 1 0 1 0-2 0v6a1 1 0 0 0 1 1ZM5.765 13H4.09V8c.663 0 1.218-.466 1.556-1.037a4.02 4.02 0 0 1 1.358-1.377c.478-.292.907-.706.989-1.26V4.32a9.03 9.03 0 0 0 0-2.642c-.028-.194.048-.394.224-.479A2 2 0 0 1 11.09 3c0 .812-.08 1.605-.235 2.371a.521.521 0 0 0 .502.629h1.733c1.104 0 2.01.898 1.901 1.997a19.831 19.831 0 0 1-1.081 4.788c-.27.747-.998 1.215-1.793 1.215H9.414c-.215 0-.428-.035-.632-.103l-2.384-.794A2.002 2.002 0 0 0 5.765 13Z" />
+									</svg>
+
+									<p className="monoFont">Liked</p>
+								</div>
+								<p className="text-xl my-4 font-medium">
+									People loved seeing the type of account tooltip/icon
+								</p>
+
+								<p className="mb-4">
+									They can now see the company type without having to go into the
+									account. Because the icons are different, they can also start to
+									learn what each mean. Eventually they might not need to hover.
+								</p>
+								<p className="alfred-quote">
+									“This is so helpful, the partner team often say, ‘I want to know
+									if this company is tied to a partner account or not’ ”
+								</p>
+							</div>
+
+						</div>
+						<div className="mt-4 p-8 rounded bg-white">
+							<div className="flex gap-4 items-center mb-4">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4">
+									<path d="M10.618 10.26c-.361.223-.618.598-.618 1.022 0 .226-.142.43-.36.49A6.006 6.006 0 0 1 8 12c-.569 0-1.12-.08-1.64-.227a.504.504 0 0 1-.36-.491c0-.424-.257-.799-.618-1.021a5 5 0 1 1 5.235 0ZM6.867 13.415a.75.75 0 1 0-.225 1.483 9.065 9.065 0 0 0 2.716 0 .75.75 0 1 0-.225-1.483 7.563 7.563 0 0 1-2.266 0Z" />
+								</svg>
+								<p className="monoFont">Insight</p>
+							</div>
+							<p className="font-semibold mb-4">
 								Agents used either company type or company status to determine
 								which result is correct.
 							</p>
-							<p>
+							<p className="mb-4">
 								During testing we validated the need to display the company
 								status and a company type identifier. This helped them determine
 								faster which team or support agent is best suited to help them.
-								Seeing the administrator role also helped agents correctly
-								determine what level of authority they had - making sure we only
-								give them the information they have permission to receive.
 							</p>
+							<p>Seeing the administrator role also helped agents correctly
+								determine what level of authority they had – making sure we only
+								give them the information they have permission to receive.</p>
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div className="bg-black text-white pb-16">
+				<div className="section">
+					<div className="mt-24">
+						<ElTransition>
+							<p className="monoFont mb-4 text-sm">What we shipped</p>
+						</ElTransition>
+						<ElTransition>
+							<h2 className="text-4xl mb-4">The Alfred Global Search</h2>
+						</ElTransition>
+						<ElTransition>
+							<p className="w-1/2">
+								The new search function lives in the global navigation bar,
+								allowing all users to access the search function from anywhere.
+								This also removes one step of the process as it allows agents to
+								search without needing to visit each page (client or partner)
+								separately.
+							</p>
+						</ElTransition>
+
+						<div className="mt-8">
+							<Lightbox imgSrc={GlobalF} header={true} />
+						</div>
+					</div>
+					<div className="mt-24">
+						<div className="sm:w-1/2">
+							<ElTransition>
+								<h2 className="mb-4">Flexible search display</h2>
+							</ElTransition>
+							<ElTransition>
+								<p>
+									The results display offer flexibility to display different types
+									of information match.
+								</p>
+							</ElTransition>
+						</div>
+
+						<div className="mt-8">
+							<Lightbox imgSrc={FlexibleSearch} header={true} />
+						</div>
+					</div>
+
+					<div className="mt-24">
+						<div className="sm:w-1/2">
+							<ElTransition>
+								<h2 className="mb-4">More context, less clicks</h2>
+							</ElTransition>
+							<ElTransition>
+								<p>
+									We’ve provided new icons and tooltips to help agents determine
+									account types instantly - allowing them to triage requests
+									faster.
+								</p>
+							</ElTransition>
+						</div>
+
+						<div className="mt-8">
+							<Lightbox imgSrc={MoreContext} header={true} />
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div className="mt-24">
-					<ElTransition>
-						<p className="monoFont mb-4 text-sm">What we shipped</p>
-					</ElTransition>
-					<ElTransition>
-						<h2 className="text-4xl mb-4">The Alfred Global Search</h2>
-					</ElTransition>
-					<ElTransition>
-						<p className="w-1/2">
-							The new search function lives in the global navigation bar,
-							allowing all users to access the search function from anywhere.
-							This also removes one step of the process as it allows agents to
-							search without needing to visit each page (client or partner)
-							separately.
-						</p>
-					</ElTransition>
-
-					<div className="mt-8">
-						<Lightbox imgSrc={GlobalF} header={true} />
-					</div>
-				</div>
-				<div className="mt-24">
-					<div className="sm:w-1/2">
-						<ElTransition>
-							<h2 className="mb-4">Flexible search display</h2>
-						</ElTransition>
-						<ElTransition>
-							<p>
-								The results display offer flexibility to display different types
-								of information match.
-							</p>
-						</ElTransition>
-					</div>
-
-					<div className="mt-8">
-						<Lightbox imgSrc={FlexibleSearch} header={true} />
-					</div>
-				</div>
-
-				<div className="mt-24">
-					<div className="sm:w-1/2">
-						<ElTransition>
-							<h2 className="mb-4">More context, less clicks</h2>
-						</ElTransition>
-						<ElTransition>
-							<p>
-								We’ve provided new icons and tooltips to help agents determine
-								account types instantly - allowing them to triage requests
-								faster.
-							</p>
-						</ElTransition>
-					</div>
-
-					<div className="mt-8">
-						<Lightbox imgSrc={MoreContext} header={true} />
-					</div>
-				</div>
+			<div className="section">
 				<CreditSection
 					firstCol={{
 						title: 'Team',

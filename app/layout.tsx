@@ -19,15 +19,12 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<div className="text-zinc-800 font-medium">
-					<Loader />
-
-					<Nav />
-
-					<div className="page mt-20">{children}</div>
-					<Footer />
-					<Analytics />
-				</div>
+				<Loader />
+				<Nav />
+				<div className="page mt-20">{children}</div>
+				<Footer />
+				<Analytics />
+				<div id="page-transition-root" />
 			</body>
 		</html>
 	);

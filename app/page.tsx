@@ -4,17 +4,19 @@ import React, { useEffect, useState } from 'react';
 
 import projectData from './data';
 import PageTransition from '@/components/PageTransition';
-import { useSpring, animated, easings } from 'react-spring';
+import { useTrail, animated, easings } from 'react-spring';
 import MouseCursor from '@/components/MouseCursor';
+import NonClickableCard from '@/components/NonClickableCard';
 
 const Home = () => {
 	const [hover, setHover] = useState(false);
 
-	const [cardProps, api] = useSpring(
+	const [cardProps, api] = useTrail(
+		4, // number of cards to animate
 		() => ({
-			from: { opacity: 0, bottom: '-16px' },
-			to: { opacity: 1, bottom: '0' },
-			delay: 750,
+			from: { opacity: 0, transform: 'translateY(20px)' },
+			to: { opacity: 1, transform: 'translateY(0px)' },
+			delay: 500,
 			config: {
 				duration: 500,
 				easing: easings.easeInOutQuint,
@@ -25,30 +27,34 @@ const Home = () => {
 		[]
 	);
 
-	useEffect(() => {}, [hover]);
+	useEffect(() => { }, [hover]);
 
 	return (
-		<PageTransition>
+		<PageTransition className="relative">
 			<div className="section">
-				<div className="pt-20">
-					<p className="text-4xl font-medium">
-						Roneilla Bumanlag
-						<br></br>– UX Designer and Developer
-					</p>
+				<div className="pt-16 pb-24">
+					<h1 className="text-2xl">
+						<span className="font-semibold">Roneilla Bumanlag</span> is a UX designer, systems thinker, and front-end developer, drawn to visual craft and the details that make products feel polished. <span className="text-gray-600">Currently @ Wagepoint</span>
+					</h1>
 				</div>
-				<div className="pt-36 pb-12 flex flex-col-reverse md:flex-row justify-between md:items-end">
-					<p className="mt-2 md:mt-0">2022 - 2025</p>
-					<p className="md:w-1/3">
-						Specializing in design systems, front-end development, and web
-						accessibility
-					</p>
-				</div>
-				<animated.div style={cardProps} className="relative">
-					<div className="mt-2 flex flex-col gap-8 mb-8">
+				{/* <h2 className="text-lg mt-16 mb-6 font-medium ">
+					Work • 2022-2026
+				</h2> */}
+				<div>
+					<div className="mt-2 grid grid-cols-1 lg:grid-cols-2 gap-16 mb-10">
 						{projectData
 							.filter((item: any) => item.category === 'selectedWork')
-							.map((item: any, index: number) => (
-								<WorkCard
+							.map((item: any, index: number) => <animated.div style={cardProps[index]} key={item.id}>
+								{item.preview ? (<NonClickableCard
+									ind={index}
+									id={item.id}
+									key={item.id}
+									title={item.title}
+									link={item.link}
+									imgSrc={item.image}
+									description={item.description}
+								// size="w-full md:w-1/2"
+								/>) : (<WorkCard
 									setHover={setHover}
 									hover={hover}
 									ind={index}
@@ -58,12 +64,13 @@ const Home = () => {
 									link={item.link}
 									imgSrc={item.image}
 									description={item.description}
-									size="w-full md:w-1/2"
-								/>
-							))}
+								// size="w-full md:w-1/2"
+								/>)}
+							</animated.div>
+							)}
 					</div>
-				</animated.div>
-				<MouseCursor hover={hover} />
+				</div>
+				{/* <MouseCursor hover={hover} /> */}
 			</div>
 		</PageTransition>
 	);

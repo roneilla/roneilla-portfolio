@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,6 +39,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Luckybones Bold';
 	src: url('Luckybones-Bold.woff2') format('woff2'),
@@ -91,7 +94,9 @@ body {
 	/* cursor: url('assets/arrow.png'), auto; */
 
 	-webkit-font-smoothing: antialiased;
-	font-family: 'PP Neue Montreal', sans-serif;
+	/* font-family: 'PP Neue Montreal', sans-serif; */
+	font-family: "Inter", sans-serif;
+
 
 	/* background: rgb(255, 255, 255);
 	background: linear-gradient(
@@ -104,7 +109,7 @@ body {
 }
 
 .section {
-	max-width: 1264px;
+	max-width: 1000px;
 	margin: auto;
 }
 
@@ -173,11 +178,11 @@ body {
 	}
 
 	h2 {
-		@apply text-3xl;
+		@apply text-3xl font-medium;
 	}
 
 	h3 {
-		@apply text-2xl;
+		@apply text-2xl font-medium;
 	}
 
 	.navlink {
@@ -217,8 +222,7 @@ body {
 	object-fit: contain;
 }
 
-.imgHeight {
-}
+.imgHeight {}
 
 .imgContainer {
 	@apply p-8 lg:p-16 flex items-center justify-center box-border;
@@ -258,6 +262,25 @@ body {
 .tpol-blue {
 	background-color: #4f73b6;
 }
+
+.alfred-big-quote {
+	padding: 60px 24px;
+	background-color: #ECF2F8;
+	border-radius: 24px 24px 24px 0px;
+}
+
+.alfred-quote {
+	padding: 12px;
+	background-color: #ECF2F8;
+	border-radius: 16px 16px 16px 0px;
+}
+
+.alfred-border {
+	/* border: #FEC059 1px solid; */
+	border-top: #666666 1px solid;
+	border-bottom: #666666 1px solid;
+}
+
 .trans {
 	top: 100vh;
 }
@@ -281,16 +304,26 @@ body {
 	cursor: pointer;
 }
 
+.transformOut {
+	transform: translateY(100vh);
+}
+
 .r-p0 {
 	background-color: #7879bd;
+}
+
+.r-test {
+	background-color: red
 }
 
 .r-p1 {
 	background-color: #adaedd;
 }
+
 .r-p2 {
 	background-color: #dcddfb;
 }
+
 .r-p3 {
 	background-color: #f2f3fd;
 }
@@ -298,6 +331,7 @@ body {
 .purple-border {
 	border-bottom: 1px solid #dcddfb;
 }
+
 .footerBtn {
 	transition: color 0.5 ease-in;
 }
@@ -335,6 +369,7 @@ body {
 		bottom: -0.2em;
 		opacity: 0;
 	}
+
 	/* 50% {
 		bottom: 0.2em;
 	} */
@@ -354,6 +389,7 @@ body {
 		transform: translate(0px, 16px);
 		opacity: 0;
 	}
+
 	100% {
 		transform: translate(0px, 0px);
 		opacity: 1;

@@ -26,8 +26,12 @@ const config: Config = {
 			gray: {
 				100: '#f5f5f5',
 				200: '#ececec',
-				600: '#4b4b4b',
+				600: '#666666',
+				800: '#343434',
 			},
+			yellow: {
+				50: '#FEFCE6',
+			}
 		},
 	},
 	plugins: [],

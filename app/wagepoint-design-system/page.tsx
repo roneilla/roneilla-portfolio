@@ -39,12 +39,12 @@ const Wpds = () => {
 							<h2 className="mr-8">{projectData[index].description}</h2>
 
 							<div className="mt-8 mb-4">
-								<p>Role</p>
+								<p className="font-semibold mb-1">Role</p>
 								<p className="text-gray-600">UX Designer and Developer</p>
 							</div>
 
 							<div>
-								<p>Team</p>
+								<p className="font-semibold mb-1">Team</p>
 								<p className="text-gray-600">
 									<ul>
 										<li>5 designers</li>
@@ -193,7 +193,7 @@ const Wpds = () => {
 					</div>
 				</div>
 			</div>
-			<div className="section py-24">
+			{/* <div className="section py-24">
 				<div className="flex flex-col md:flex-row gap-8">
 					<div className="flex-1 pr-8">
 						<div className="sticky top-40">
@@ -217,7 +217,7 @@ const Wpds = () => {
 				<div className="mt-8">
 					<Lightbox imgSrc={MultiProduct} header={true} />
 				</div>
-			</div>
+			</div> */}
 
 			<ProjectFooter />
 		</PageTransition>

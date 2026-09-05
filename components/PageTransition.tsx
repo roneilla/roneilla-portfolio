@@ -4,9 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 const PageTransition = ({ children }: any) => {
+	// UPDATE TO USETRAIL INSTEAD OF USESPRING FOR MULTIPLE DIVS
 	const [red, api1] = useSpring(
 		() => ({
-			from: { top: '0' },
+			from: {
+				top: '0'
+			},
 			to: { top: '100vh' },
 			delay: 200,
 			config: { tension: 250, friction: 35 },
@@ -32,7 +35,7 @@ const PageTransition = ({ children }: any) => {
 		[]
 	);
 
-	return children;
+	// return children;
 	return (
 		<>
 			<animated.div
