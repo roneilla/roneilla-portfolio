@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import ElTransition from './ElTransition';
 import { useScroll, animated, useSpring } from 'react-spring';
 
+import FooterBg from '@/app/assets/footer-bg.svg'
 import Image from 'next/image';
 
 const Footer = () => {
@@ -48,38 +49,43 @@ const Footer = () => {
 
 	const LinkIcon = () => {
 		return (<span className="inline-block ml-1 align-middle">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="w-4">
-				<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="w-4">
+				<path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
 			</svg>
 		</span>)
 	}
 
 	return (
-		<footer className="text-center px-4 py-8">
-			<div className="flex-initial flex flex-row gap-8 justify-center">
-				<Link
-					href="https://www.linkedin.com/in/roneilla/"
-					target="_blank"
-					className="hover:underline md:text-lg">
-					LinkedIn<LinkIcon />
-				</Link>
-				<Link
-					href="https://github.com/roneilla"
-					target="_blank"
-					className="hover:underline md:text-lg">
-					GitHub<LinkIcon />
-				</Link>
-				<Link
-					href="mailto:roneillabumanlag@gmail.com"
-					target="_blank"
-					className="hover:underline md:text-lg">
-					Email
-					<LinkIcon />
-				</Link>
+		<footer className='mt-10'
+		// style={{ backgroundImage: `url(${FooterBg.src})` }}
+		>
+			<Image src={FooterBg} alt="" className='rounded-none' />
+			<div className="text-center px-4 pt-6 pb-12 footer">
+				<div className="flex-initial flex flex-row gap-8 justify-center">
+					<Link
+						href="https://www.linkedin.com/in/roneilla/"
+						target="_blank"
+						className="hover:underline md:text-lg">
+						LinkedIn<LinkIcon />
+					</Link>
+					<Link
+						href="https://github.com/roneilla"
+						target="_blank"
+						className="hover:underline md:text-lg">
+						GitHub<LinkIcon />
+					</Link>
+					<Link
+						href="mailto:roneillabumanlag@gmail.com"
+						target="_blank"
+						className="hover:underline md:text-lg">
+						Email
+						<LinkIcon />
+					</Link>
+				</div>
+				<p className="text-sm mt-2">
+					Designed and built by Roneilla Bumanlag © 2026
+				</p>
 			</div>
-			<p className="text-sm mt-1 md:mt-4 text-gray-600">
-				Designed and built by Roneilla Bumanlag © 2026
-			</p>
 		</footer>
 	);
 };

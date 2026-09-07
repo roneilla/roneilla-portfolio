@@ -400,6 +400,10 @@ body {
 	height: 600px;
 }
 
+.footer {
+	background-color: #DCDDFB;
+}
+
 .viewCaseBtn {
 	border-radius: 1000px;
 	position: fixed;

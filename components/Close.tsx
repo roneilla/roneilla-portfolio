@@ -10,14 +10,14 @@ const Close = ({ onClick }: any) => {
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg">
 				<path
-					fill-rule="evenodd"
-					clip-rule="evenodd"
+					fillRule="evenodd"
+					clipRule="evenodd"
 					d="M24.3652 25.559L0.39209 1.58585L1.8063 0.171632L25.7794 24.1448L24.3652 25.559Z"
 					fill="white"
 				/>
 				<path
 					fill-rule="evenodd"
-					clip-rule="evenodd"
+					clipRule="evenodd"
 					d="M25.7794 1.58585L1.8063 25.559L0.39209 24.1448L24.3652 0.171631L25.7794 1.58585Z"
 					fill="white"
 				/>
