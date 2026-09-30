@@ -109,7 +109,7 @@ body {
 }
 
 .section {
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 }
 
@@ -207,7 +207,7 @@ body {
 }
 
 .workCardImg {
-	width: 100%;
+	/* width: 100%; */
 	box-sizing: border-box;
 	transition: all 0.1s ease-in-sine;
 }

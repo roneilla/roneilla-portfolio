@@ -41,31 +41,23 @@ const Home = () => {
 					Work • 2022-2026
 				</h2> */}
 				<div>
-					<div className="mt-2 grid grid-cols-1 lg:grid-cols-2 gap-16 mb-10">
+					<div className="mt-2 flex flex-col gap-16 mb-10">
 						{projectData
 							.filter((item: any) => item.category === 'selectedWork')
 							.map((item: any, index: number) => <animated.div style={cardProps[index]} key={item.id}>
-								{item.preview ? (<NonClickableCard
-									ind={index}
-									id={item.id}
-									key={item.id}
-									title={item.title}
-									link={item.link}
-									imgSrc={item.image}
-									description={item.description}
-								// size="w-full md:w-1/2"
-								/>) : (<WorkCard
+								<WorkCard
 									setHover={setHover}
 									hover={hover}
-									ind={index}
 									id={item.id}
 									key={item.id}
 									title={item.title}
 									link={item.link}
 									imgSrc={item.image}
 									description={item.description}
+									impact={item.impact}
+									preview={item.preview}
 								// size="w-full md:w-1/2"
-								/>)}
+								/>
 							</animated.div>
 							)}
 					</div>
