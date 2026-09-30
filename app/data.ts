@@ -8,6 +8,8 @@ import Wpds from '@/app/assets/wpds-thumbnail.png';
 import AlfredSearch from '@/app/assets/alfredsearch-thumbnail.png';
 import Verification from '@/app/assets/verification-thumbnail.png';
 import WPAISummary from '@/app/assets/wpaisummary-thumbnail.png';
+import SingleLogIn from '@/app/assets/singlelogin-thumbnail.png'
+import Geofence from '@/app/assets/geofence-thumbnail.png'
 
 const projectData = [
 	// {
@@ -28,10 +30,39 @@ const projectData = [
 		description:
 			'Designed the product’s first AI feature to help admins catch anomalies and turn payroll data into actionable insights.',
 		image: WPAISummary,
-		role: 'UX Designer & Developer',
+		role: 'UX Designer',
 		size: 'w-full md:w-2/6',
-		tags: ['UX Design', 'AI'],
+		tags: ['Shipped'],
 		category: 'selectedWork',
+		impact: ['First AI feature shipped', 'Established new AI interaction patterns']
+	},
+	// {
+	// 	preview: true,
+	// 	id: 'wp-geofence',
+	// 	title: `Geofenced clock in/out`,
+	// 	link: '/wagepoint-geofence',
+	// 	description:
+	// 		'Designed geofencing capabilities for employee time tracking, helping businesses manage where employees can clock in and out.',
+	// 	image: Geofence,
+	// 	role: 'UX Designer',
+	// 	size: 'w-full md:w-2/6',
+	// 	tags: ['Shipped'],
+	// 	category: 'selectedWork',
+	// 	impact: ['First AI feature shipped', 'Established new AI interaction patterns']
+	// },
+	{
+		preview: true,
+		id: 'wp-singlelogin',
+		title: `Single Login`,
+		link: '/wagepoint-single-login',
+		description:
+			'Enabled users to work across multiple companies with a single account, while making it easier to navigate between the businesses they manage.',
+		image: SingleLogIn,
+		role: 'UX Designer',
+		size: 'w-full md:w-2/6',
+		tags: ['Shipped'],
+		category: 'selectedWork',
+		impact: ['First AI feature shipped', 'Established new AI interaction patterns']
 	},
 	{
 		id: 'wp-ds',
@@ -42,8 +73,9 @@ const projectData = [
 		image: Wpds,
 		role: 'UX Designer & Developer',
 		size: 'w-full md:w-2/6',
-		tags: ['Design system', 'UX Development'],
+		tags: ['UX Development'],
 		category: 'selectedWork',
+		impact: ['Designed + coded components', 'Improved documentation and contribution practices', 'Improved component to decrease detaching']
 	},
 	{
 		id: 'wp-alfredsearch',
@@ -53,8 +85,11 @@ const projectData = [
 		image: AlfredSearch,
 		role: 'UX Designer & Developer',
 		size: 'w-full md:w-4/6',
-		tags: ['UX Design', 'Internal tools'],
+		tags: ['Internal tools'],
 		category: 'selectedWork',
+		impact: [
+			'Made key customer information easier to find',
+		]
 	},
 	{
 		id: 'qcdt',
